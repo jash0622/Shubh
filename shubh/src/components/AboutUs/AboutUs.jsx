@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './aboutus.css';
+import './AboutUs.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
