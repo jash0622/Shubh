@@ -128,8 +128,8 @@ function Project() {
             loop 
             playsInline
           >
-            <source src="/herovideo.mp4" type="video/mp4" />
-            <source src="/images/herovideo.webm" type="video/webm" />
+            <source src="/video2.mp4" type="video/mp4" />
+            <source src="/video2.mp4" type="video/webm" />
             {/* Fallback image if video doesn't load */}
             <img src="/images/hero/building-render-1.jpg" alt="The Seggovias Building" className="hero-image" />
           </video>
