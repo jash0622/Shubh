@@ -5,7 +5,7 @@ import Home from './components/Home/Home.jsx';
 import Project from './components/Project/Project.jsx';
 import './App.css';
 import Contact from './components/Contact/Contact.jsx';
-import AboutUs from './components/AboutUs/Aboutus.jsx';
+import AboutUs from './components/AboutUs/AboutUs.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
