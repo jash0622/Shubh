@@ -19,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   object-fit: cover;
   z-index: -2;
 }
@@ -29,7 +29,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
@@ -51,26 +51,26 @@
   max-width: 600px;
 }
 
-.main-heading h1{
+.content-left h1{
   color: white !important;
-  font-size: 90px;
+  font-size: 50px;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 2px;
-  margin-bottom: 0;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .home-text {
   color: white;
-  font-size: 120px;
+  font-size: 250px;
   font-weight: 300;
   font-style: italic;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Dancing Script', cursive;
   text-transform: lowercase;
-  margin-bottom: 50px;
-  margin-top: -20px;
+  margin-bottom: -50px;
+  margin-top: -250px;
   margin-left: 10px;
 }
 
@@ -118,7 +118,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 80px 80px 0 80px;
+  padding: 150px 80px 0 80px;
   border-radius: 60px 60px 0 0;
   margin-top: 0;
   overflow: visible;
@@ -141,7 +141,7 @@
 }
 
 .mission-subtitle {
-  font-size: 30px;
+  font-size: 15px;
   color: #8b7355;
   letter-spacing: 1.5px;
   line-height: 1.4;
@@ -151,23 +151,21 @@
 }
 
 .mission-heading {
-  font-size: 100px;
+  font-size: 60px;
   color: #2c2c2c;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
-.mission-heading .what-we-line {
-  white-space: nowrap;
-}
+
 
 /* Mission Description - Positioned for scroll reveal */
 .mission-description {
   position: absolute;
-  top: 60vh;
+  top: 40vh;
   right: 80px;
   max-width: 500px;
   text-align: right;
@@ -175,12 +173,13 @@
 }
 
 .mission-description p {
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 200px;
-  color: #666;
+  color: #2c2c2c;
   line-height: 1.4;
-  font-weight: 300;
+  font-weight: 1000;
   letter-spacing: 0.3px;
+  
 }
 
 .flower-image {
@@ -250,7 +249,7 @@
   background: #1b011f;
   overflow: visible;
   z-index: 1;
-  margin-top: 0%;
+  margin-top: 0;
 }
 
 /* Globe Image Styles */
@@ -283,60 +282,65 @@
 }
 
 /* Main Vision Text - appears above parallax containers */
-.vision-overlay {
+.vision-main-text {
   position: absolute;
-  top: 70vh;
-  left: 72vw;
-  z-index: 1003;
+  
+  left: 5vw;
+  z-index: 1004;
   color: white;
-  max-width: 400px;
-  text-align: left;
-  margin-right: 50px;
+  font-weight: 300;
+  font-size: 50px;
 }
-
-.vision-title {
-  font-size: 70px;
+ .vision-title {
+  font-size: 60px;
   color: white;
   font-weight: 300;
   line-height: 0.9;
   letter-spacing: 4px;
-  margin: 0;
   text-transform: uppercase;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 350px;
+  text-align: center;
+  z-index: 1005;
+  margin-left: 190px;
+  
 }
 
 .vision-powered {
-  font-size: 50px;
+  font-size: 60px;
   color: white;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 0.9;
   letter-spacing: 3px;
-  margin: 10px 0 30px 0;
+  margin-left: 300px;
+  margin-top: 30px;
   text-transform: uppercase;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .vision-explore {
-  font-size: 28px;
+  font-size: 200px;
   color: #bc8f24;
   font-style: italic;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Dancing Script', cursive;
   text-transform: lowercase;
   letter-spacing: 1px;
-  margin: 20px 0;
+  text-align: center;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  margin-top: -150px;
 }
 
 .vision-description {
-  font-size: 16px;
-  color: #ccc;
+  font-size: 15px;
+  color: white;
   line-height: 1.5;
   font-weight: 300;
   letter-spacing: 0.5px;
-  margin-top: 60px;
-  margin-left: -200px;
+  margin-top: 150px;
+  margin-left: 650px;
   margin-right: 50px;
   font-style: italic;
+  text-align: justify;
 }
 
 /* Values Section */
@@ -363,28 +367,28 @@
 }
 
 .values-main-title {
-  font-size: 90px;
+  font-size: 50px;
   color: #2c2c2c;
   font-weight: 400;
   line-height: 0.9;
-  letter-spacing: 6px;
+  letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .values-cursive {
-  font-size: 60px;
+  font-size: 180px;
   color: #bc8f24;
   font-style: italic;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Dancing Script', cursive;
   text-transform: lowercase;
   letter-spacing: 3px;
-  margin: -10px 0 30px 0;
+  margin: -150px 0 30px 0;
 }
 
 .values-subtitle {
-  font-size: 14px;
-  color: #8b7355;
+  font-size: 15px;
+  color: #2c2c2c;
   letter-spacing: 2px;
   line-height: 1.5;
   font-weight: 400;
@@ -496,10 +500,11 @@
   z-index: 2;
   text-align: center;
   color: white;
+  margin-top: -180px;
 }
 
 .couple-subtitle {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -508,7 +513,7 @@
 }
 
 .couple-main-title {
-  font-size: 72px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: 4px;
@@ -517,7 +522,7 @@
 }
 
 .couple-subtitle-line {
-  font-size: 72px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: 4px;
@@ -614,7 +619,7 @@
 }
 
 .faces-title {
-  font-size: 72px;
+  font-size: 50px;
   color: white;
   font-weight: 400;
   line-height: 0.9;
@@ -624,7 +629,7 @@
 }
 
 .faces-subtitle {
-  font-size: 38px;
+  font-size: 150px;
   color: #d4af37;
   font-style: italic;
   font-family: 'Brush Script MT', 'Lucida Handwriting', 'Dancing Script', cursive;
@@ -632,6 +637,7 @@
   letter-spacing: 2px;
   margin-left: 5px;
   margin-bottom: 50px;
+  margin-top: -130px;
 }
 
 /* Faces Slider */
@@ -668,7 +674,7 @@
 }
 
 .face-name {
-  font-size: 46px;
+  font-size: 25px;
   color: white;
   font-weight: 300;
   text-transform: uppercase;
@@ -738,7 +744,7 @@
   margin-top: 40px;
 }
 
-.nav-arrow {
+.aboutus-nav-arrow {
   width: 80px;
   height: 80px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -753,7 +759,7 @@
   justify-content: center;
 }
 
-.nav-arrow:hover {
+.aboutus-nav-arrow:hover {
   border-color: #bc8f24;
   color: #bc8f24;
   transform: scale(1.1);
@@ -861,7 +867,7 @@
   z-index: 2;
 }
 
-.form-input {
+.aboutus-form-input {
   width: 100%;
   padding: 16px 20px;
   font-size: 13px;
@@ -877,19 +883,19 @@
   height: 50px;
 }
 
-.form-input::placeholder {
+.aboutus-form-input::placeholder {
   color: #999;
   font-weight: 400;
   font-size: 13px;
 }
 
-.form-input:focus {
+.aboutus-form-input:focus {
   border-color: #bc8f24;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0 0 0 2px rgba(188, 143, 36, 0.1);
 }
 
-.form-input.error {
+.aboutus-form-input.error {
   border-color: #e74c3c;
   background: rgba(255, 255, 255, 1);
 }
@@ -973,7 +979,7 @@
     gap: 10px;
   }
 
-  .form-input {
+  .aboutus-form-input {
     padding: 15px 18px;
     font-size: 12px;
     height: 48px;
@@ -1012,7 +1018,7 @@
     max-width: none;
   }
 
-  .form-input {
+  .aboutus-form-input {
     padding: 16px 20px;
     font-size: 13px;
     height: 50px;
@@ -1378,7 +1384,7 @@
     height: 300px;
   }
 
-  .nav-arrow {
+  .aboutus-nav-arrow {
     width: 70px;
     height: 70px;
     font-size: 24px;
@@ -1449,7 +1455,7 @@
     max-width: none;
   }
 
-  .form-input {
+  .aboutus-form-input {
     padding: 18px 20px;
     font-size: 14px;
   }

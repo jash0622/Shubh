@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Loader from '../Loader/Loader';
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="contact-page fade-in-element">
-        <Header />
+      {isLoading && <Loader onComplete={handleLoaderComplete} />}
+      <Header />
       <section className="contact-hero">
         <video 
-          className="hero-video" 
+          className="contact-hero-video" 
           autoPlay 
           muted 
           loop 
@@ -17,11 +25,10 @@ const Contact = () => {
         >
           <source src="/HERO.mp4" type="video/mp4" />
         </video>
-        <div className="hero-overlay">
-          <div className="hero-content">
-            <div className="hero-subtitle">CONTACT US</div>
-            <h1 className="hero-title">WE'RE HERE TO HELP</h1>
-            <div className="hero-description">
+        <div className="contact-hero-overlay">
+          <div className="contact-hero-content">
+            <h1 className="contact-hero-title">WE'RE HERE TO HELP</h1>
+            <div className="contact-hero-description">
               WE'D LOVE TO HEAR<br />
               FROM YOU.
             </div>
@@ -33,29 +40,29 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-info">
             <div className="info-section">
-              <div className="section-title">GET IN TOUCH</div>
-              <div className="section-content">+91 89 2002 2004</div>
+              <div className="contact-section-title">GET IN TOUCH</div>
+              <div className="contact-section-content">+91 89 2002 2004</div>
             </div>
             
             <div className="info-section">
-              <div className="section-title">COME & VISIT</div>
-              <div className="section-content">
+              <div className="contact-section-title">COME & VISIT</div>
+              <div className="contact-section-content">
                 Baani The Address One, 402, 4th Floors, Golf<br />
                 Course Road, Sector 56, Gurugram - 122011
               </div>
             </div>
             
             <div className="info-section">
-              <div className="section-title">SALES GALLERY</div>
-              <div className="section-content">
+              <div className="contact-section-title">SALES GALLERY</div>
+              <div className="contact-section-content">
                 Subh housing , sector 70A, Near DMart , SPR<br />
                 road, Gurgaon - 122001
               </div>
             </div>
             
             <div className="info-section">
-              <div className="section-title">DROP AN EMAIL</div>
-              <div className="section-content">info@subhhousing.com</div>
+              <div className="contact-section-title">DROP AN EMAIL</div>
+              <div className="contact-section-content">info@subhhousing.com</div>
             </div>
             
             <div className="social-links">
@@ -95,11 +102,11 @@ const Contact = () => {
             
             <form className="contact-form-fields">
               <div className="form-row">
-                <input type="text" placeholder="*Full Name" className="form-input" />
-                <input type="tel" placeholder="Phone Number*" className="form-input" />
+                <input type="text" placeholder="*Full Name" className="contact-form-input" />
+                <input type="tel" placeholder="Phone Number*" className="contact-form-input" />
               </div>
-              <input type="email" placeholder="Email Address*" className="form-input" />
-              <textarea placeholder="Ask your queries" className="form-textarea" rows="5"></textarea>
+              <input type="email" placeholder="Email Address*" className="contact-form-input" />
+              <textarea placeholder="Ask your queries" className="contact-form-textarea" rows="5"></textarea>
               <button type="submit" className="form-submit">SUBMIT YOUR QUERY</button>
               <div className="form-security">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">

@@ -15,7 +15,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="container">
+        <div className="footer-container">
           <div className="footer-nav">
             <Link 
               to="/" 
@@ -69,7 +69,7 @@ function Footer() {
       </div>
       
       <div className="footer-contact">
-        <div className="container">
+        <div className="footer-container">
           <div className="logo">
             <Link to="/" style={{ cursor: 'pointer' }}>
               <img src="/Subh-Housing-Logo-White.png" alt="Subh Housing Logo" className="logo-image" />
@@ -88,12 +88,12 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <div className="container">
+        <div className="footer-container">
           <div className="copyright">© 2025 Subh Housing. All Right Reserved.</div>
          
           <div className="legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/term&conditions">Terms of Use</Link>
             <a href="#">Documentation</a>
           </div>
         </div>

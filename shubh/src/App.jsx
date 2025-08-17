@@ -6,6 +6,8 @@ import Project from './components/Project/Project.jsx';
 import './App.css';
 import Contact from './components/Contact/Contact.jsx';
 import AboutUs from './components/AboutUs/AboutUs.jsx';
+import TermsConditions from './components/TermsConditions/TermsConditions.jsx';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -48,6 +50,8 @@ function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/term&conditions" element={<TermsConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
     </Router>

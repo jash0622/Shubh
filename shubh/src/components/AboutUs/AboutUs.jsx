@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './AboutUs.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Loader from '../Loader/Loader';
 
 const AboutUs = () => {
   const [scrollY, setScrollY] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(1); // Start from 1 (actual first slide)
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   
   // Newsletter form state
   const [newsletterData, setNewsletterData] = useState({
@@ -178,8 +180,13 @@ const AboutUs = () => {
     }
   };
 
+  const handleLoaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="aboutus-container fade-in-element">
+      {isLoading && <Loader onComplete={handleLoaderComplete} />}
       <Header />
       {/* Background Video */}
       <video className="background-video" autoPlay muted loop>
@@ -211,9 +218,7 @@ const AboutUs = () => {
           <div className="mission-text">
             <p className="mission-subtitle">You know when you like a place,<br />BUT YOU CAN'T EXPLAIN WHY?</p>
             <h2 className="mission-heading">
-              THAT'S<br />
-              <span className="what-we-line">WHAT WE</span><br />
-              DO
+              THAT'S WHAT WE  DO
             </h2>
           </div>
         </div>
@@ -281,18 +286,20 @@ const AboutUs = () => {
         </div>
 
         {/* Main Vision Text - Elementor style reveal with left container */}
-        <div className="vision-overlay"
-             style={{
-               opacity: scrollY > window.innerHeight * 1.5 ? 1 : 0,
-               transition: 'opacity 0.6s ease-in-out'
-             }}>
+         <div className="vision-main-text"
+              style={{
+                opacity: scrollY > window.innerHeight * 1.2 ? 1 : 0,
+                transition: 'opacity 0.6s ease-in'
+              }}>
           <h2 className="vision-title">A VISION</h2>
           <h3 className="vision-powered">POWERED BY PEOPLE</h3>
           <p className="vision-explore">explore our journey</p>
           <p className="vision-description">
-            "Buying a home isn't just a transaction — it's a turning point in your life. At Subh Housing, we honour that. Every conversation, every design, and every brick laid reflects our commitment to building not just houses, but homes where memories are made and futures are secured. You've worked hard for this moment — and we're here to make it worthwhile."
+            Buying a home isn't just a transaction — it's a turning point in your life. <br/> At Subh Housing, we honour that. Every conversation, every design,<br/> and every brick laid reflects our commitment to building not just houses,<br/> but homes where memories are made and futures are secured.<br/> You've worked hard for this moment —<br/> and we're here to make it worthwhile.
           </p>
         </div>
+          
+        
       </section>
 
       {/* Values Section */}
@@ -398,13 +405,13 @@ const AboutUs = () => {
 
           <div className="faces-navigation">
             <button 
-              className="nav-arrow" 
+              className="aboutus-nav-arrow" 
               onClick={prevSlide}
             >
               &#8249;
             </button>
             <button 
-              className="nav-arrow" 
+              className="aboutus-nav-arrow" 
               onClick={nextSlide}
             >
               &#8250;
@@ -433,7 +440,7 @@ const AboutUs = () => {
                   placeholder="Your Full Name*"
                   value={newsletterData.fullName}
                   onChange={handleNewsletterChange}
-                  className={`form-input ${newsletterErrors.fullName ? 'error' : ''}`}
+                  className={`aboutus-form-input ${newsletterErrors.fullName ? 'error' : ''}`}
                 />
                 {newsletterErrors.fullName && (
                   <span className="error-message">{newsletterErrors.fullName}</span>
@@ -447,7 +454,7 @@ const AboutUs = () => {
                   placeholder="Your Email*"
                   value={newsletterData.email}
                   onChange={handleNewsletterChange}
-                  className={`form-input ${newsletterErrors.email ? 'error' : ''}`}
+                  className={`aboutus-form-input ${newsletterErrors.email ? 'error' : ''}`}
                 />
                 {newsletterErrors.email && (
                   <span className="error-message">{newsletterErrors.email}</span>

@@ -6,15 +6,19 @@ import 'swiper/css/navigation';
 import './Home.css';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Loader from '../Loader/Loader';
 
 const Home = () => {
   const [activeCard, setActiveCard] = useState('purpose'); // Default to purpose
   const [hoveredCard, setHoveredCard] = useState(null); // Track which card is hovered
   const [activeBusinessCard, setActiveBusinessCard] = useState('real-estate'); // Default to real estate
+  const [scrollY, setScrollY] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
+      setScrollY(scrolled);
 
       const parallaxRings = document.querySelector('.rings-parallax');
       const storyDescription = document.querySelector('.story-description');
@@ -38,21 +42,7 @@ const Home = () => {
         }
       }
 
-      // === Image Frame Parallax Effect ===
-      const imageFrames = document.querySelectorAll('.image-frame');
-      imageFrames.forEach(frame => {
-        const image = frame.querySelector('.story-left, .story-right');
-        
-        // Move the frame container with scroll
-        const frameSpeed = 0.2;
-        frame.style.transform = `translateY(${scrolled * frameSpeed}px)`;
-        
-        // Move the image inside in opposite direction for parallax effect
-        if (image) {
-          const imageSpeed = -0.1;
-          image.style.transform = `translateY(${scrolled * imageSpeed}px)`;
-        }
-      });
+
 
       // === Leaves parallax ===
       if (parallaxLeaf && foundationsTitle && storyRightFrame) {
@@ -131,8 +121,13 @@ const Home = () => {
     setActiveBusinessCard(cardType);
   };
 
+  const handleLoaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="home fade-in-element">
+      {isLoading && <Loader onComplete={handleLoaderComplete} />}
       <Header />
       
       {/* Hero Section */}
@@ -183,13 +178,27 @@ const Home = () => {
       {/* Combined Story + Foundations */}
       <section className="combined-story-foundations">
         {/* Left image frame - below text paragraph, slightly overflowing upward */}
-        <div className="image-frame story-left-frame">
-          <div className="story-left"></div>
+        <div className="image-frame story-left-frame"
+             style={{
+               opacity: scrollY > window.innerHeight * 1.5 ? 1 : 0,
+               transition: 'opacity 0.5s ease-in-out'
+             }}>
+          <div className="story-left"
+               style={{
+                 transform: `translateY(${scrollY * -0.2}px)`
+               }}></div>
         </div>
         
         {/* Right image frame - taller height, positioned higher to overlay story description */}
-        <div className="image-frame story-right-frame">
-          <div className="story-right"></div>
+        <div className="image-frame story-right-frame"
+             style={{
+               opacity: scrollY > window.innerHeight * 1.0 ? 1 : 0,
+               transition: 'opacity 0.5s ease-in-out'
+             }}>
+          <div className="story-right"
+               style={{
+                 transform: `translateY(${scrollY * -0.3}px)`
+               }}></div>
         </div>
         
         {/* Badge overlay on top of both images */}
@@ -263,8 +272,7 @@ const Home = () => {
           <img src="/image-girl.webp" alt="Mother and Daughter" className="girl-image" />
           <div className="signature-footer">
             <p>
-              Seggovias by Subh Housing is a premium 3 BHK<br />
-              + Study residential project offering spacious<br />
+              Seggovias by Subh Housing is a premium 3 BHK + Study residential project offering spacious<br />
               layouts, modern interiors, and lifestyle amenities<br />
               — designed for elevated living in a prime, well-connected location.
             </p>
@@ -302,7 +310,7 @@ const Home = () => {
       <section className="growing-frontiers-section">
         <div className="frontiers-content">
           <div className="frontiers-text">
-            <h2 className="frontiers-title">GROWING<br />ACROSS<br />FRONTIERS</h2>
+            <h2 className="frontiers-title">GROWING ACROSS<br />FRONTIERS</h2>
             <p className="frontiers-subtitle">Our business</p>
             <p className="frontiers-description">
               From developing high-end homes to acquiring prime land<br />
@@ -532,8 +540,8 @@ const ValuesSlideshow = () => {
           disableOnInteraction: false,
         }}
         navigation={{
-          prevEl: '.nav-arrow-left',
-          nextEl: '.nav-arrow-right',
+          prevEl: '.home-nav-arrow-left',
+          nextEl: '.home-nav-arrow-right',
         }}
         className="slides-container"
       >
@@ -550,10 +558,10 @@ const ValuesSlideshow = () => {
         ))}
       </Swiper>
       
-      <button className="nav-arrow nav-arrow-left">
+      <button className="home-nav-arrow home-nav-arrow-left">
         ←
       </button>
-      <button className="nav-arrow nav-arrow-right">
+      <button className="home-nav-arrow home-nav-arrow-right">
         →
       </button>
     </div>

@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import './Project.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Loader from '../Loader/Loader';
 
 function Project() {
   // State management
@@ -14,6 +15,7 @@ function Project() {
   const [currentExteriorSlide, setCurrentExteriorSlide] = useState(0);
   const [currentAmenityTab, setCurrentAmenityTab] = useState('wellness');
   const [currentAmenitySlide, setCurrentAmenitySlide] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Data arrays
   const interiorSlides = [
@@ -114,8 +116,13 @@ function Project() {
     setCurrentAmenitySlide(0);
   };
 
+  const handleLoaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="project-page fade-in-element">
+      {isLoading && <Loader onComplete={handleLoaderComplete} />}
       <Header />
 
       {/* Hero Section */}
@@ -140,7 +147,7 @@ function Project() {
 
       {/* Project Details Section */}
       <section className="project-details">
-        <div className="container">
+        <div className="project-container">
           <div className="project-content">
             <div className="project-text">
               <img src="/Seggovias.png" alt="Seggovias Logo" className="project-logo" />
@@ -236,9 +243,9 @@ function Project() {
 
       {/* Glimpses Section */}
       <section className="glimpses">
-        <div className="container">
+        <div className="project-container">
           <div className="glimpses-header">
-            <h2 className="section-title">GLIMPSES OF MASTERPIECE</h2>
+            <h2 className="project-section-title">GLIMPSES OF MASTERPIECE</h2>
             <div className="glimpse-tabs">
               <button 
                 className={`tab ${currentGlimpseTab === 'interior' ? 'active' : ''}`}
@@ -319,8 +326,8 @@ function Project() {
       {/* Immersive Tour Section */}
       <section className="immersive-tour">
         <div className="immersive-tour-header">
-          <div className="container">
-            <h2 className="section-title">IMMERSIVE TOUR</h2>
+          <div className="project-container">
+            <h2 className="project-section-title">IMMERSIVE TOUR</h2>
             <button className="virtual-tour-btn">VIRTUAL TOUR</button>
           </div>
         </div>
@@ -368,9 +375,9 @@ function Project() {
 
       {/* Amenities Section */}
       <section className="amenities">
-        <div className="container">
+        <div className="project-container">
           <div className="amenities-header">
-            <h2 className="section-title">PREMIER OFFERINGS</h2>
+            <h2 className="project-section-title">PREMIER OFFERINGS</h2>
             <div className="amenity-tabs">
               <button 
                 className={`tab ${currentAmenityTab === 'wellness' ? 'active' : ''}`}
@@ -427,8 +434,8 @@ function Project() {
 
       {/* Connectivity Section */}
       <section className="connectivity">
-        <div className="container">
-          <h2 className="section-title">CONNECTIVITY</h2>
+        <div className="project-container">
+          <h2 className="project-section-title">CONNECTIVITY</h2>
           <div className="connectivity-map">
             <img src="/map.jpg" alt="Connectivity Map" />
           </div>
@@ -437,9 +444,9 @@ function Project() {
 
       {/* Floor Plans Section */}
       <section className="floor-plans">
-        <div className="container">
+        <div className="project-container">
           <div className="floor-plans-header">
-            <h2 className="section-title">PROJECT CONFIGURATION</h2>
+            <h2 className="project-section-title">PROJECT CONFIGURATION</h2>
             <div className="config-badge">3 BHK + LOUNGE + STUDY</div>
           </div>
           

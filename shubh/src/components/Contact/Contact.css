@@ -12,7 +12,7 @@
   justify-content: center;
 }
 
-.hero-video {
+.contact-hero-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +22,7 @@
   z-index: 1;
 }
 
-.hero-overlay {
+.contact-hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,24 +35,16 @@
   z-index: 2;
 }
 
-.hero-content {
+.contact-hero-content {
   text-align: center;
   color: white;
   max-width: 800px;
   padding: 0 20px;
 }
 
-.hero-subtitle {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 4px;
-  margin-bottom: 40px;
-  color: #C29F7B;
-  text-transform: uppercase;
-}
 
-.hero-title {
-  font-size: clamp(3rem, 8vw, 5.5rem);
+.contact-hero-title {
+  font-size: 3.7rem ;
   font-weight: 300;
   line-height: 1.1;
   margin: 0 0 40px 0;
@@ -60,7 +52,7 @@
   text-transform: uppercase;
 }
 
-.hero-description {
+.contact-hero-description {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
@@ -101,7 +93,7 @@
   padding-bottom: 0;
 }
 
-.section-title {
+.contact-section-title {
   font-size: 14px;
   font-weight: 300;
   color: #aaa;
@@ -112,7 +104,7 @@
 
 
 
-.section-content {
+.contact-section-content {
   font-size: 20px;
   font-weight: 300;
   color: #2c2c2c;
@@ -143,7 +135,7 @@
 .social-link:hover {
   background-color: #663399;
   border-color: #663399;
-  color: white;
+  color: #2c2c2c;
   transform: translateY(-2px);
 }
 
@@ -182,8 +174,8 @@
   gap: 15px;
 }
 
-.form-input,
-.form-textarea {
+.contact-form-input,
+.contact-form-textarea {
   padding: 15px;
   border: 1px solid #f4d03f;
   font-size: 14px;
@@ -192,14 +184,14 @@
   border-radius: 8px;
 }
 
-.form-input:focus,
-.form-textarea:focus {
+.contact-form-input:focus,
+.contact-form-textarea:focus {
   outline: none;
   border-color: #f4d03f;
   background-color: white;
 }
 
-.form-textarea {
+.contact-form-textarea {
   resize: vertical;
   min-height: 120px;
 }
@@ -275,18 +267,18 @@
 }
 
 @media (max-width: 768px) {
-  .hero-subtitle {
+  .contact-hero-subtitle {
     font-size: 12px;
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
   
-  .hero-title {
+  .contact-hero-title {
     font-size: clamp(2rem, 10vw, 3.5rem);
     margin-bottom: 30px;
   }
   
-  .hero-description {
+  .contact-hero-description {
     font-size: 16px;
   }
   
