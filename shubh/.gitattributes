@@ -1,2 +1,4 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+shubh/public/aboutusvideo.mp4 filter=lfs diff=lfs merge=lfs -text
+shubh/public/hero-video.mp4 filter=lfs diff=lfs merge=lfs -text
 shubh/public/immersive-tour.mp4 filter=lfs diff=lfs merge=lfs -text
+shubh/public/video2.mp4 filter=lfs diff=lfs merge=lfs -text
