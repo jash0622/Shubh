@@ -110,3 +110,208 @@ body {
     font-size: 14px;
   }
 }
+/* ===== ENHANCED RESPONSIVE DESIGN ===== */
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .main-content-privacy-page { max-width: 1200px; padding: 80px 50px; }
+  .page-title-privacy-page { font-size: 56px; margin-bottom: 80px; }
+  .content-section-privacy-page { padding: 80px; margin-left: -200px; margin-right: -200px; }
+  .intro-text-privacy-page, .section-privacy-page { margin-left: 120px; margin-right: 120px; }
+  .intro-text-privacy-page { font-size: 18px; margin-bottom: 50px; }
+  .section-privacy-page { margin-bottom: 50px; }
+  .section-privacy-page h2 { font-size: 28px; margin-bottom: 18px; }
+  .section-privacy-page p, .section-privacy-page li { font-size: 18px; }
+}
+
+/* Standard Desktop (1200px - 1439px) - Keep current styles */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  /* Current styles maintained */
+}
+
+/* Small Desktop/Large Tablet (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .main-content-privacy-page { max-width: 900px; padding: 50px 35px; }
+  .page-title-privacy-page { font-size: 42px; margin-bottom: 50px; }
+  .content-section-privacy-page { padding: 50px; margin-left: -140px; margin-right: -140px; }
+  .intro-text-privacy-page, .section-privacy-page { margin-left: 80px; margin-right: 80px; }
+  .intro-text-privacy-page { font-size: 15px; margin-bottom: 35px; }
+  .section-privacy-page { margin-bottom: 35px; }
+  .section-privacy-page h2 { font-size: 22px; margin-bottom: 13px; }
+  .section-privacy-page p, .section-privacy-page li { font-size: 15px; }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .main-content-privacy-page { max-width: 800px; padding: 45px 30px; }
+  .page-title-privacy-page { font-size: 38px; margin-bottom: 45px; letter-spacing: 1px; }
+  .content-section-privacy-page { 
+    padding: 45px 40px; 
+    margin-left: -100px; 
+    margin-right: -100px; 
+  }
+  .intro-text-privacy-page, .section-privacy-page { 
+    margin-left: 60px; 
+    margin-right: 60px; 
+  }
+  .intro-text-privacy-page { font-size: 14.5px; margin-bottom: 30px; }
+  .section-privacy-page { margin-bottom: 30px; }
+  .section-privacy-page h2 { font-size: 21px; margin-bottom: 12px; }
+  .section-privacy-page p, .section-privacy-page li { font-size: 14.5px; }
+  .date-info-privacy-page { font-size: 13px; margin-bottom: 25px; }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .main-content-privacy-page { padding: 35px 25px; }
+  .page-title-privacy-page { font-size: 32px; margin-bottom: 40px; letter-spacing: 1px; }
+  .content-section-privacy-page { 
+    padding: 35px 25px; 
+    margin-left: -50px; 
+    margin-right: -50px; 
+  }
+  .intro-text-privacy-page, .section-privacy-page { 
+    margin-left: 30px; 
+    margin-right: 30px; 
+  }
+  .intro-text-privacy-page { font-size: 13.5px; margin-bottom: 25px; }
+  .section-privacy-page { margin-bottom: 25px; }
+  .section-privacy-page h2 { font-size: 19px; margin-bottom: 10px; }
+  .section-privacy-page p, .section-privacy-page li { font-size: 13.5px; }
+  .date-info-privacy-page { font-size: 12px; margin-bottom: 20px; }
+}
+
+/* Mobile Medium (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .main-content-privacy-page { padding: 30px 20px; }
+  .page-title-privacy-page { font-size: 28px; margin-bottom: 35px; letter-spacing: 0.5px; }
+  .content-section-privacy-page { 
+    padding: 30px 20px; 
+    margin-left: -30px; 
+    margin-right: -30px; 
+  }
+  .intro-text-privacy-page, .section-privacy-page { 
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  .intro-text-privacy-page { font-size: 13px; margin-bottom: 20px; }
+  .section-privacy-page { margin-bottom: 20px; }
+  .section-privacy-page h2 { font-size: 18px; margin-bottom: 8px; }
+  .section-privacy-page p, .section-privacy-page li { font-size: 13px; }
+  .date-info-privacy-page { font-size: 11px; margin-bottom: 18px; }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (max-width: 479px) {
+  .main-content-privacy-page { 
+    padding: 25px 15px; 
+  }
+  
+  .date-info-privacy-page { 
+    font-size: 10px; 
+    margin-bottom: 15px; 
+  }
+  
+  .page-title-privacy-page { 
+    font-size: 24px; 
+    margin-bottom: 30px; 
+    letter-spacing: 0.5px; 
+  }
+  
+  .content-section-privacy-page { 
+    padding: 25px 15px; 
+    margin-left: -20px; 
+    margin-right: -20px; 
+  }
+  
+  .intro-text-privacy-page, 
+  .section-privacy-page { 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+  
+  .intro-text-privacy-page { 
+    font-size: 12px; 
+    margin-bottom: 18px; 
+    line-height: 1.5; 
+  }
+  
+  .section-privacy-page { 
+    margin-bottom: 18px; 
+  }
+  
+  .section-privacy-page h2 { 
+    font-size: 16px; 
+    margin-bottom: 8px; 
+  }
+  
+  .section-privacy-page p, 
+  .section-privacy-page li { 
+    font-size: 12px; 
+    line-height: 1.5; 
+    margin-bottom: 8px; 
+  }
+  
+  .section-privacy-page ul { 
+    margin-left: 15px; 
+    margin-top: 8px; 
+  }
+  
+  .section-privacy-page li { 
+    margin-bottom: 6px; 
+  }
+}
+
+/* Ultra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .main-content-privacy-page { 
+    padding: 20px 10px; 
+  }
+  
+  .date-info-privacy-page { 
+    font-size: 9px; 
+    margin-bottom: 12px; 
+  }
+  
+  .page-title-privacy-page { 
+    font-size: 20px; 
+    margin-bottom: 25px; 
+    letter-spacing: 0; 
+  }
+  
+  .content-section-privacy-page { 
+    padding: 20px 10px; 
+    margin-left: -15px; 
+    margin-right: -15px; 
+  }
+  
+  .intro-text-privacy-page, 
+  .section-privacy-page { 
+    margin-left: 5px; 
+    margin-right: 5px; 
+  }
+  
+  .intro-text-privacy-page { 
+    font-size: 11px; 
+    margin-bottom: 15px; 
+  }
+  
+  .section-privacy-page { 
+    margin-bottom: 15px; 
+  }
+  
+  .section-privacy-page h2 { 
+    font-size: 14px; 
+    margin-bottom: 6px; 
+  }
+  
+  .section-privacy-page p, 
+  .section-privacy-page li { 
+    font-size: 11px; 
+    margin-bottom: 6px; 
+  }
+  
+  .section-privacy-page ul { 
+    margin-left: 12px; 
+  }
+}

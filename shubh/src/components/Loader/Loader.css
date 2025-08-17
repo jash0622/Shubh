@@ -29,3 +29,74 @@
   50% { opacity: 1; }
   75% { opacity: 0.5; }
 }
+/* ===== ENHANCED RESPONSIVE DESIGN ===== */
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .loader-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Standard Desktop (1200px - 1439px) - Keep current styles */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  /* Current styles maintained */
+}
+
+/* Small Desktop/Large Tablet (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .loader-logo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .loader-logo {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .loader-logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile Medium (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .loader-logo {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (max-width: 479px) {
+  .loader-logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Ultra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .loader-logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Ensure loader covers full screen on all devices */
+@media (max-width: 768px) {
+  .loader {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  }
+}

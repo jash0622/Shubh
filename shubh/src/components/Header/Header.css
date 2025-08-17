@@ -214,3 +214,316 @@
     font-size: 8px;
   }
 }
+/* ===== ENHANCED RESPONSIVE DESIGN ===== */
+
+/* Hamburger Menu - Hidden by default */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .header-container {
+    padding: 35px 70px;
+    max-width: 1600px;
+  }
+  
+  .logo {
+    max-width: 180px;
+    max-height: 240px;
+  }
+  
+  .nav-link {
+    font-size: 15px !important;
+  }
+  
+  .phone-number {
+    font-size: 16px;
+  }
+  
+  .schedule-btn {
+    padding: 14px 28px;
+    font-size: 13px;
+  }
+}
+
+/* Standard Desktop (1200px - 1439px) - Keep current styles */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  /* Current styles maintained */
+}
+
+/* Small Desktop/Large Tablet (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .header-container {
+    padding: 25px 50px;
+  }
+  
+  .nav-left {
+    gap: 25px;
+  }
+  
+  .nav-right {
+    gap: 25px;
+  }
+  
+  .logo {
+    max-width: 140px;
+    max-height: 180px;
+  }
+  
+  .nav-link {
+    font-size: 12px !important;
+  }
+  
+  .phone-number {
+    font-size: 13px;
+  }
+  
+  .schedule-btn {
+    padding: 11px 22px;
+    font-size: 11px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .header-container {
+    padding: 20px 40px;
+  }
+  
+  .nav-left {
+    gap: 20px;
+  }
+  
+  .nav-right {
+    gap: 20px;
+  }
+  
+  .logo {
+    max-width: 130px;
+    max-height: 160px;
+  }
+  
+  .nav-link {
+    font-size: 11px !important;
+  }
+  
+  .phone-number {
+    font-size: 12px;
+  }
+  
+  .schedule-btn {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .nav-left {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(33, 16, 50, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .nav-left.mobile-menu-open {
+    display: flex;
+  }
+  
+  .nav-right {
+    display: none;
+  }
+  
+  .nav-right.mobile-menu-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(33, 16, 50, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    z-index: 1000;
+    margin-top: 200px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .logo-container {
+    position: static;
+    transform: none;
+  }
+  
+  .logo {
+    max-width: 120px;
+    max-height: 140px;
+  }
+  
+  .nav-link {
+    font-size: 14px !important;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  .phone-number {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .schedule-btn {
+    padding: 12px 24px;
+    font-size: 12px;
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .header-container {
+    padding: 12px 18px;
+  }
+  
+  .logo {
+    max-width: 110px;
+    max-height: 130px;
+  }
+}
+
+/* Mobile Medium (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .header-container {
+    padding: 10px 15px;
+  }
+  
+  .logo {
+    max-width: 100px;
+    max-height: 120px;
+  }
+  
+  .nav-left,
+  .nav-right.mobile-menu-open {
+    padding: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 13px !important;
+  }
+  
+  .phone-number {
+    font-size: 13px;
+  }
+  
+  .schedule-btn {
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (max-width: 479px) {
+  .header-container {
+    padding: 8px 12px;
+  }
+  
+  .logo {
+    max-width: 90px;
+    max-height: 110px;
+  }
+  
+  .hamburger-menu {
+    right: 12px;
+  }
+  
+  .hamburger-line {
+    width: 22px;
+    height: 2px;
+  }
+  
+  .nav-left,
+  .nav-right.mobile-menu-open {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 12px !important;
+    padding: 8px 0;
+  }
+  
+  .phone-number {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  
+  .schedule-btn {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}
+
+/* Ensure header stays fixed and responsive */
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+  }
+  
+  .header.scrolled {
+    background: rgba(33, 16, 50, 0.95) !important;
+  }
+}

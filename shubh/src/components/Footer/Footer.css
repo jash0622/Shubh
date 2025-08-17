@@ -311,3 +311,461 @@
     font-size: 0.75rem;
   }
 }
+/* ===== ENHANCED RESPONSIVE DESIGN ===== */
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .footer-content .footer-container { max-width: 1400px; padding: 0 2.5rem; }
+  .footer-nav { gap: 2.5rem; }
+  .footer-nav a { font-size: 1rem; }
+  .social-links { gap: 2.5rem; }
+  .social-links a { width: 45px; height: 45px; font-size: 1.4rem; }
+  .footer-contact .footer-container { max-width: 1400px; padding: 0 2.5rem; }
+  .footer-contact .logo-image { height: 80px; }
+  .phone-number { font-size: 4rem; letter-spacing: 5px; }
+  .office-label { font-size: 1.2rem; letter-spacing: 5px; }
+  .address { font-size: 1.3rem; }
+  .footer-bottom .footer-container { max-width: 1400px; padding: 0 2.5rem; }
+}
+
+/* Standard Desktop (1200px - 1439px) - Keep current styles */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  /* Current styles maintained */
+}
+
+/* Small Desktop/Large Tablet (992px - 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .footer-content .footer-container { padding: 0 2rem; }
+  .footer-nav { gap: 1.8rem; }
+  .footer-nav a { font-size: 0.8rem; }
+  .social-links { gap: 1.8rem; }
+  .social-links a { width: 38px; height: 38px; font-size: 1.1rem; }
+  .footer-contact { padding: 3.5rem 0; }
+  .footer-contact .footer-container { gap: 3.5rem; padding: 0 2rem; }
+  .footer-contact .logo-image { height: 65px; }
+  .phone-number { font-size: 3.2rem; margin-top: -120px; }
+  .office-label { font-size: 0.9rem; letter-spacing: 3px; }
+  .address { font-size: 1rem; }
+  .footer-bottom .footer-container { padding: 0 2rem; }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-content .footer-container { 
+    flex-direction: column; 
+    gap: 1.8rem; 
+    padding: 0 1.5rem; 
+  }
+  
+  .footer-nav { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1.5rem; 
+  }
+  
+  .footer-nav a { 
+    font-size: 0.75rem; 
+  }
+  
+  .social-links { 
+    gap: 1.5rem; 
+  }
+  
+  .social-links a { 
+    width: 36px; 
+    height: 36px; 
+    font-size: 1rem; 
+  }
+  
+  .footer-contact { 
+    padding: 3rem 0; 
+  }
+  
+  .footer-contact .footer-container { 
+    gap: 2.5rem; 
+    padding: 0 1.5rem; 
+  }
+  
+  .footer-contact .logo-image { 
+    height: 60px; 
+  }
+  
+  .phone-number { 
+    font-size: 2.8rem; 
+    margin-top: -100px; 
+  }
+  
+  .office-label { 
+    font-size: 0.85rem; 
+    letter-spacing: 3px; 
+  }
+  
+  .address { 
+    font-size: 0.95rem; 
+  }
+  
+  .footer-bottom .footer-container { 
+    flex-direction: column; 
+    gap: 1.2rem; 
+    text-align: center; 
+    padding: 0 1.5rem; 
+  }
+  
+  .legal-links { 
+    gap: 1.5rem; 
+  }
+  
+  .legal-links a { 
+    font-size: 0.8rem; 
+  }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .footer-content { padding: 1.5rem 0; }
+  
+  .footer-content .footer-container { 
+    gap: 1.5rem; 
+    padding: 0 1.2rem; 
+  }
+  
+  .footer-nav { 
+    gap: 1.2rem; 
+  }
+  
+  .footer-nav a { 
+    font-size: 0.7rem; 
+  }
+  
+  .social-links { 
+    gap: 1.2rem; 
+  }
+  
+  .social-links a { 
+    width: 32px; 
+    height: 32px; 
+    font-size: 0.9rem; 
+  }
+  
+  .footer-contact { 
+    padding: 2.5rem 0; 
+  }
+  
+  .footer-contact .footer-container { 
+    gap: 2rem; 
+    padding: 0 1.2rem; 
+  }
+  
+  .footer-contact .logo { 
+    margin-bottom: 3rem; 
+  }
+  
+  .footer-contact .logo-image { 
+    height: 55px; 
+  }
+  
+  .phone-number { 
+    font-size: 2.2rem; 
+    letter-spacing: 3px; 
+    margin-top: -80px; 
+  }
+  
+  .office-label { 
+    font-size: 0.8rem; 
+    letter-spacing: 2.5px; 
+  }
+  
+  .address { 
+    font-size: 0.9rem; 
+    max-width: 400px; 
+  }
+  
+  .footer-bottom { 
+    padding: 1.5rem 0; 
+  }
+  
+  .footer-bottom .footer-container { 
+    gap: 1rem; 
+    padding: 0 1.2rem; 
+  }
+  
+  .legal-links { 
+    gap: 1.2rem; 
+  }
+  
+  .legal-links a { 
+    font-size: 0.75rem; 
+  }
+}
+
+/* Mobile Medium (480px - 575px) */
+@media (max-width: 575px) and (min-width: 480px) {
+  .footer-content { padding: 1.2rem 0; }
+  
+  .footer-content .footer-container { 
+    gap: 1.2rem; 
+    padding: 0 1rem; 
+  }
+  
+  .footer-nav { 
+    gap: 1rem; 
+  }
+  
+  .footer-nav a { 
+    font-size: 0.65rem; 
+  }
+  
+  .social-links { 
+    gap: 1rem; 
+  }
+  
+  .social-links a { 
+    width: 30px; 
+    height: 30px; 
+    font-size: 0.8rem; 
+  }
+  
+  .footer-contact { 
+    padding: 2rem 0; 
+  }
+  
+  .footer-contact .footer-container { 
+    gap: 1.5rem; 
+    padding: 0 1rem; 
+  }
+  
+  .footer-contact .logo { 
+    margin-bottom: 2rem; 
+  }
+  
+  .footer-contact .logo-image { 
+    height: 50px; 
+  }
+  
+  .phone-number { 
+    font-size: 2rem; 
+    letter-spacing: 2px; 
+    margin-top: -60px; 
+  }
+  
+  .office-label { 
+    font-size: 0.75rem; 
+    letter-spacing: 2px; 
+  }
+  
+  .address { 
+    font-size: 0.85rem; 
+    max-width: 350px; 
+  }
+  
+  .footer-bottom { 
+    padding: 1.2rem 0; 
+  }
+  
+  .footer-bottom .footer-container { 
+    gap: 0.8rem; 
+    padding: 0 1rem; 
+  }
+  
+  .legal-links { 
+    gap: 1rem; 
+  }
+  
+  .legal-links a { 
+    font-size: 0.7rem; 
+  }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (max-width: 479px) {
+  .footer-content { 
+    padding: 1rem 0; 
+  }
+  
+  .footer-content .footer-container { 
+    gap: 1rem; 
+    padding: 0 0.8rem; 
+  }
+  
+  .footer-nav { 
+    flex-direction: column; 
+    gap: 0.8rem; 
+    text-align: center; 
+  }
+  
+  .footer-nav a { 
+    font-size: 0.6rem; 
+    letter-spacing: 0.5px; 
+  }
+  
+  .social-links { 
+    gap: 0.8rem; 
+    justify-content: center; 
+  }
+  
+  .social-links a { 
+    width: 28px; 
+    height: 28px; 
+    font-size: 0.7rem; 
+  }
+  
+  .footer-contact { 
+    padding: 1.5rem 0; 
+  }
+  
+  .footer-contact .footer-container { 
+    gap: 1.2rem; 
+    padding: 0 0.8rem; 
+  }
+  
+  .footer-contact .logo { 
+    margin-bottom: 1.5rem; 
+  }
+  
+  .footer-contact .logo-image { 
+    height: 45px; 
+  }
+  
+  .footer-contact .contact-info { 
+    gap: 1.5rem; 
+  }
+  
+  .phone-number { 
+    font-size: 1.8rem; 
+    letter-spacing: 1.5px; 
+    margin-top: -40px; 
+  }
+  
+  .office-label { 
+    font-size: 0.7rem; 
+    letter-spacing: 1.5px; 
+  }
+  
+  .address { 
+    font-size: 0.8rem; 
+    max-width: 300px; 
+    line-height: 1.5; 
+  }
+  
+  .footer-bottom { 
+    padding: 1rem 0; 
+  }
+  
+  .footer-bottom .footer-container { 
+    gap: 0.8rem; 
+    padding: 0 0.8rem; 
+  }
+  
+  .copyright { 
+    font-size: 0.75rem; 
+  }
+  
+  .credits { 
+    gap: 0.8rem; 
+  }
+  
+  .ics-logo { 
+    width: 28px; 
+    height: 28px; 
+  }
+  
+  .ics-icon { 
+    font-size: 14px; 
+  }
+  
+  .legal-links { 
+    flex-direction: column; 
+    gap: 0.5rem; 
+    text-align: center; 
+  }
+  
+  .legal-links a { 
+    font-size: 0.65rem; 
+  }
+}
+
+/* Ultra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .footer-content { 
+    padding: 0.8rem 0; 
+  }
+  
+  .footer-content .footer-container { 
+    gap: 0.8rem; 
+    padding: 0 0.5rem; 
+  }
+  
+  .footer-nav a { 
+    font-size: 0.55rem; 
+  }
+  
+  .social-links a { 
+    width: 25px; 
+    height: 25px; 
+    font-size: 0.6rem; 
+  }
+  
+  .footer-contact { 
+    padding: 1.2rem 0; 
+  }
+  
+  .footer-contact .footer-container { 
+    gap: 1rem; 
+    padding: 0 0.5rem; 
+  }
+  
+  .footer-contact .logo-image { 
+    height: 40px; 
+  }
+  
+  .phone-number { 
+    font-size: 1.5rem; 
+    letter-spacing: 1px; 
+    margin-top: -30px; 
+  }
+  
+  .office-label { 
+    font-size: 0.6rem; 
+    letter-spacing: 1px; 
+  }
+  
+  .address { 
+    font-size: 0.7rem; 
+    max-width: 250px; 
+  }
+  
+  .footer-bottom { 
+    padding: 0.8rem 0; 
+  }
+  
+  .footer-bottom .footer-container { 
+    gap: 0.6rem; 
+    padding: 0 0.5rem; 
+  }
+  
+  .copyright { 
+    font-size: 0.7rem; 
+  }
+  
+  .ics-logo { 
+    width: 25px; 
+    height: 25px; 
+  }
+  
+  .ics-icon { 
+    font-size: 12px; 
+  }
+  
+  .legal-links a { 
+    font-size: 0.6rem; 
+  }
+}
+
+/* Ensure proper hover effects on all screen sizes */
+@media (max-width: 768px) {
+  .footer-nav a:hover, 
+  .social-links a:hover, 
+  .legal-links a:hover { 
+    transform: translateY(-1px); 
+  }
+}
