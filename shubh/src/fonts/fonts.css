@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'SangBleuSunrise';
+  src: url('./SangBleuSunrise-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WonderGardenScript';
+  src: url('./WonderGardenScript.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('./GeneralSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SangBleuSunrise', serif !important;
+}
+
+.welcome-tagline,
+.foundations-tagline,
+.experience-text,
+.frontiers-subtitle,
+.bank-stay-informed,
+.home-text,
+.vision-explore,
+.values-cursive,
+.faces-subtitle {
+  font-family: 'WonderGardenScript', cursive !important;
+}
+
+p, span, div:not(.welcome-tagline):not(.foundations-tagline):not(.experience-text):not(.frontiers-subtitle):not(.bank-stay-informed):not(.home-text):not(.vision-explore):not(.values-cursive):not(.faces-subtitle), 
+.hero-subtitle, .story-text, .philosophy-text, .panel p, .signature-footer p, .frontiers-description, .bank-description, 
+.description, .mission-subtitle, .vision-description, .card-description, .newsletter-description, .form-input, .form-textarea,
+.section-content, .contact-form-fields input, .contact-form-fields textarea, .project-description p, .feature-text h3 {
+  font-family: 'GeneralSans-Light', sans-serif !important;
+}
