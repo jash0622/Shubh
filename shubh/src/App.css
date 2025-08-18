@@ -20,11 +20,63 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Viewport Units Responsive Design */
 #root {
-  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: calc(0.5rem + 1vw);
   margin: 0;
   padding: 0;
 }
+
+/* Make all elements scale with viewport */
+* {
+  font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: calc(1em + 0.5vw);
+}
+
+button {
+  padding: calc(0.5rem + 0.5vw) calc(1rem + 1vw);
+  font-size: calc(0.8rem + 0.3vw);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+/* Container scaling */
+.container, .project-container {
+  width: calc(90vw + 5%);
+  max-width: none;
+  margin: 0 auto;
+  padding: calc(1rem + 1vw);
+}
+
+/* Section spacing */
+section {
+  padding: calc(2rem + 2vw) 0;
+}
+
+/* Responsive spacing and sizing */
+.btn-primary, .btn-secondary {
+  padding: calc(0.75rem + 0.5vw) calc(1.5rem + 1vw);
+  font-size: calc(0.9rem + 0.2vw);
+}
+
+/* Swiper responsive */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: calc(30vw + 10%);
+}
+
+
 
 .App {
   width: 100%;
@@ -64,63 +116,3 @@ body {
   }
 }
 
-/* Global responsive container */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 100%;
-    padding: 0 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-}
-
-/* Ensure images are responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  h2 {
-    font-size: 1.3rem;
-  }
-  
-  h3 {
-    font-size: 1.1rem;
-  }
-}
