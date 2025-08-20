@@ -1030,371 +1030,255 @@
     font-size: 11px;
   }
 }
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .main-heading {
-    font-size: 68px;
-  }
-  
-  .mission-section {
-    padding: 60px 50px 0 50px;
-    height: 220vh;
-  }
-  
-  .mission-heading {
-    font-size: 70px;
-  }
-  
-  .mission-description {
-    top: 70vh;
-    right: 50px;
-  }
-  
-  .flower-image img {
-    width: 600px;
-    height: 600px;
-  }
-  
-  .parallax-left {
-    width: 40vw;
-    height: 120vh;
-    top: 250vh;
-  }
-  
-  .parallax-right {
-    width: 28vw;
-    height: 70vh;
-    left: 65vw;
-    top: 250vh;
-  }
-  
-  .vision-title {
-    font-size: 55px;
-  }
-  
-  .vision-powered {
-    font-size: 40px;
-  }
-  
-  .vision-explore {
-    font-size: 24px;
-  }
-  
-  .vision-overlay {
-    left: 67vw;
-  }
-
-  .vision-right-text {
-    left: 68vw;
-  }
-
-  .globe-image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .step-in-button {
-    width: 180px;
-    height: 180px;
-  }
-
-  .step-in-text {
-    font-size: 16px;
-  }
-
-  .curve-design {
-    width: 250px;
-    height: 80px;
-  }
-
-  .faces-title {
-    font-size: 50px;
-  }
-
-  .faces-subtitle {
-    font-size: 32px;
-  }
-
-  .face-name {
-    font-size: 32px;
-  }
-
-  .face-quote {
-    font-size: 18px;
-  }
-
-  .face-image img {
-    height: 400px;
-  }
-
-  .values-main-title {
-    font-size: 60px;
-  }
-
-  .values-cursive {
-    font-size: 40px;
-  }
-
-  .values-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  .newsletter-title {
-    font-size: 56px;
-  }
-
-  .newsletter-description {
-    font-size: 16px;
-  }
-
-  .form-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .form-group {
-    max-width: 400px;
-    width: 100%;
-  }
-
-  .newsletter-submit-btn {
-    max-width: 400px;
-    width: 100%;
-  }
-}
-
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
+  .aboutus-container {
+    min-height: auto;
+  }
+
+  /* Header adjustments for mobile */
   .header {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    padding: 15px 20px;
+    background: rgba(27, 1, 31, 0.95);
   }
 
-  .nav-left {
-    gap: 20px;
-  }
-
+  /* Main Content - Hero Section */
   .main-content {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 40px 20px;
-    gap: 40px;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
   }
 
-  .main-heading {
-    font-size: 48px;
+  .content-left {
+    max-width: 100%;
+    order: 1;
+    margin-top: 300px;
+  }
+
+  .content-left h1 {
+    font-size:30px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    white-space: normal;
+  }
+
+  .home-text {
+    font-size: 200px;
+    margin-top: -100px;
+    margin-bottom: 5px;
+    margin-left: 0;
+  }
+
+  .explore-btn {
+    padding: 15px 35px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    border-radius: 25px;
   }
 
   .content-right {
-    text-align: left;
     max-width: 100%;
+    text-align: center;
+    order: 2;
+    padding-bottom: 0;
   }
 
   .description {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 300px;
+    margin: 0 auto;
   }
-  
+
+  /* Mission Section */
   .mission-section {
-    flex-direction: column;
-    padding: 60px 30px;
-    text-align: center;
     height: auto;
+    padding: 80px 20px 60px 20px;
+    text-align: center;
   }
-  
+
   .mission-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
+  .mission-text {
+    max-width: 100%;
+  }
+
+  .mission-subtitle {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
   
+
+  .mission-heading {
+    right: -10px;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+
   .mission-description {
     position: relative;
-    top: auto;
+   
     right: auto;
-    margin-top: 40px;
     max-width: 100%;
     text-align: center;
+    margin-top: 100px;
   }
-  
+
   .mission-description p {
-    font-size: 18px;
+    font-size: 12px;
+    margin-top: -230px;
+    line-height: 1.0;
   }
-  
-  .mission-heading {
-    font-size: 50px;
-  }
-  
+
+  /* Hide flower image on mobile */
   .flower-image {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin-top: 40px;
+    display: none;
   }
-  
-  .flower-image img {
-    width: 300px;
-    height: 300px;
-  }
-  
-  .parallax-section {
-    height: auto;
-    padding: 40px 20px;
-    margin-top: 0;
-  }
-  
+
+  /* Show parallax containers on mobile as static images */
   .parallax-left {
     position: relative;
-    top: 0;
-    left: 0;
+    top: auto;
+    left: auto;
     width: 100%;
     height: 60vh;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-radius: 15px;
+    z-index: 2;
+    opacity: 1 !important;
+    overflow: hidden;
   }
-  
+
   .parallax-right {
     position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
+    top: auto;
+    left: auto;
     width: 100%;
     height: 50vh;
-    margin-bottom: 30px;
+    margin: 20px 0;
     border-radius: 15px;
-  }
-  
-  .vision-overlay {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    transform: none;
-    text-align: center;
-    margin-top: 30px;
-    max-width: 100%;
-  }
-  
-  .vision-right-text {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .vision-title {
-    font-size: 40px;
-  }
-  
-  .vision-powered {
-    font-size: 30px;
-  }
-  
-  .vision-explore {
-    font-size: 24px;
+    z-index: 2;
+    opacity: 1 !important;
+    overflow: hidden;
   }
 
-  .globe-image {
-    width: 250px;
-    height: 250px;
-    left: 50%;
-    transform: translateX(-50%);
+  .parallax-bg-left {
+    background-attachment: scroll;
+    will-change: transform;
+    height: 220%;
+    background-size: cover;
+    background-position: center;
   }
-  
-  .parallax-bg-left,
+
   .parallax-bg-right {
     background-attachment: scroll;
+    will-change: transform;
+    height: 220%;
+    background-size: cover;
+    background-position: center;
   }
 
-  .couple-section {
-    background-attachment: scroll;
+  /* Hide globe animation on mobile */
+  .globe-image {
+    display: none;
   }
 
-  .couple-main-title,
-  .couple-subtitle-line {
-    font-size: 48px;
-  }
-
-  .couple-subtitle {
-    font-size: 14px;
-  }
-
-  .step-in-button {
-    width: 150px;
-    height: 150px;
-  }
-
-  .step-in-text {
-    font-size: 14px;
-  }
-
-  .curve-design {
-    width: 200px;
-    height: 60px;
-    top: -40px;
-  }
-
-  .faces-header {
+  /* Parallax Section - Vision */
+  .parallax-section {
+    height: auto;
+    padding: 80px 20px;
     text-align: center;
-    padding-left: 0;
   }
 
-  .faces-title {
-    font-size: 48px;
+  .vision-right-text {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  .faces-subtitle {
+  .vision-right-text p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .vision-main-text {
+    position: relative;
+    left: auto;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .vision-title {
     font-size: 36px;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    letter-spacing: 2px;
   }
 
-  .face-slide {
-    flex-direction: column;
-    padding: 0 20px;
-    gap: 30px;
+  .vision-powered {
+    font-size: 36px;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 2px;
   }
 
-  .face-name {
-    font-size: 32px;
+  .vision-explore {
+    font-size: 80px;
+    margin-top: -20px;
+    text-align: center;
   }
 
-  .face-quote {
-    font-size: 16px;
-  }
-
-  .face-message {
+  .vision-description {
     font-size: 14px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 10px;
   }
 
-  .face-signature {
-    font-size: 24px;
-  }
-
-  .face-image img {
-    height: 300px;
-  }
-
-  .aboutus-nav-arrow {
-    width: 70px;
-    height: 70px;
-    font-size: 24px;
-  }
-
+  /* Values Section */
   .values-section {
     padding: 80px 20px 60px 20px;
+    background-attachment: scroll;
   }
 
   .values-main-title {
-    font-size: 48px;
+    font-size: 32px;
+    letter-spacing: 1px;
   }
 
   .values-cursive {
-    font-size: 36px;
+    font-size: 100px;
+    margin: -80px 0 20px 0;
   }
 
   .values-subtitle {
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
   }
 
   .values-cards {
@@ -1404,58 +1288,216 @@
   }
 
   .value-card {
-    padding: 40px 30px;
-    min-height: 350px;
+    padding: 30px 25px;
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .card-number {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: 12px;
   }
 
   .card-description {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.6;
   }
 
-  .newsletter-section {
-    background: #f0e6d6;
+  /* Couple Section */
+  .couple-section {
+    background-attachment: scroll;
+    height: 80vh;
+  }
+
+  .couple-content {
+    margin-top: -100px;
+  }
+
+  .couple-subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .couple-main-title {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .couple-subtitle-line {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  /* Step In Section */
+  .step-in-section {
+    min-height: auto;
     padding: 60px 20px;
   }
 
-  .newsletter-title {
-    font-size: 48px;
+  .step-in-content {
+    margin-bottom: 60px;
+  }
+
+  .step-in-button {
+    width: 120px;
+    height: 120px;
+    top: -80px;
+  }
+
+  .step-in-text {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .curve-design {
+    width: 200px;
+    height: 60px;
+    top: -85px;
+  }
+
+  /* Faces Section */
+  .faces-header {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .faces-title {
+    font-size: 32px;
     letter-spacing: 3px;
   }
 
-  .newsletter-description {
+  .faces-subtitle {
+    font-size: 80px;
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+
+  .faces-container {
+    width: 500%;
+    transform: translateX(-20%);
+    transition: transform 0.5s ease;
+  }
+
+  .face-slide {
+    width: 20%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    min-height: 500px;
+  }
+
+  .face-content {
+    max-width: 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .face-image {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .face-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .face-position {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
+  .face-quote-card {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .face-quote {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+
+  .face-message {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .face-signature {
+    font-size: 24px;
+  }
+
+  .face-image {
+    max-width: 100%;
+  }
+
+  .face-image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .aboutus-nav-arrow {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  /* Newsletter Section */
+  .newsletter-section {
+    padding: 60px 20px;
+    background-attachment: scroll;
+  }
+
+  .newsletter-section::before {
+    background-attachment: scroll;
+  }
+
+  .newsletter-title {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-description {
+    font-size: 13px;
+    max-width: 280px;
+    margin-bottom: 40px;
   }
 
   .form-row {
     flex-direction: column;
     gap: 15px;
-    padding: 30px 20px;
-    border-radius: 40px;
-    background: linear-gradient(rgba(240, 232, 218, 0.9), rgba(240, 232, 218, 0.9)), url('/news.png');
-    background-size: cover;
-    background-position: center;
   }
 
   .form-group {
     width: 100%;
-    max-width: none;
   }
 
   .aboutus-form-input {
-    padding: 18px 20px;
-    font-size: 14px;
+    padding: 16px 20px;
+    font-size: 13px;
+    height: 50px;
+    border-radius: 8px;
   }
 
   .newsletter-submit-btn {
     width: 100%;
-    max-width: none;
-    height: 60px;
-    font-size: 14px;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 8px;
   }
 
   .privacy-notice {
@@ -1463,6 +1505,7 @@
   }
 
   .privacy-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
+

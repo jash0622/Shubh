@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from '@studio-freight/lenis';
 import Home from './components/Home/Home.jsx';
@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact.jsx';
 import AboutUs from './components/AboutUs/AboutUs.jsx';
 import TermsConditions from './components/TermsConditions/TermsConditions.jsx';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy.jsx';
+import Model from './components/model/model.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -20,6 +21,8 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -36,10 +39,20 @@ function App() {
 
     requestAnimationFrame(raf);
 
+    // Auto popup modal every 30 seconds
+    const modalInterval = setInterval(() => {
+      setIsModalOpen(true);
+    }, 60000);
+
     return () => {
       lenis.destroy();
+      clearInterval(modalInterval);
     };
   }, []);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <Router>
@@ -53,6 +66,7 @@ function App() {
           <Route path="/term&conditions" element={<TermsConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
+        <Model isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </Router>
   );

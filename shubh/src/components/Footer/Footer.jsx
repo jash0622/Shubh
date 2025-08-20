@@ -77,7 +77,7 @@ function Footer() {
           </div>
           
           <div className="contact-info">
-            <div className="phone-number">+91 89 2002 2004</div>
+            <div className="phone-number-footer">+91 89 2002 2004</div>
             <div className="office-label">SALES OFFICE</div>
             <div className="address">
               Subh Housing , Sector 70A, Near DMart , SPR Road,<br />

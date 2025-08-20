@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+import Model from '../model/model';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -23,31 +26,52 @@ const Header = () => {
     return false;
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    closeMobileMenu();
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <nav className="nav-left">
+        <nav className={`nav-left ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <Link 
             to="/" 
             className={`nav-link ${isActiveLink('/') ? 'active' : ''}`}
+            onClick={closeMobileMenu}
           >
             HOME
           </Link>
           <Link 
             to="/aboutus" 
             className={`nav-link ${isActiveLink('/about') ? 'active' : ''}`}
+            onClick={closeMobileMenu}
           >
             ABOUT US
           </Link>
           <Link 
             to="/projects" 
             className={`nav-link ${isActiveLink('/projects') ? 'active' : ''}`}
+            onClick={closeMobileMenu}
           >
             PROJECTS
           </Link>
           <Link 
             to="/contact" 
             className={`nav-link ${isActiveLink('/contact') ? 'active' : ''}`}
+            onClick={closeMobileMenu}
           >
             CONTACT US
           </Link>
@@ -59,11 +83,18 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="nav-right">
+        <div className={`hamburger-menu ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+        </div>
+
+        <div className={`nav-right ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <a href="tel:+918920022004" className="phone-number">+ (91) 89 2002 2004</a>
-          <button className="schedule-btn">SCHEDULE A VISIT</button>
+          <button className="schedule-btn" onClick={openModal}>SCHEDULE A VISIT</button>
         </div>
       </div>
+      <Model isOpen={isModalOpen} onClose={closeModal} />
     </header>
   );
 };

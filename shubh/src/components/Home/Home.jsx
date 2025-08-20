@@ -7,6 +7,8 @@ import './Home.css';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Loader from '../Loader/Loader';
+import Model from '../model/model';
+
 
 const Home = () => {
   const [activeCard, setActiveCard] = useState('purpose'); // Default to purpose
@@ -14,6 +16,7 @@ const Home = () => {
   const [activeBusinessCard, setActiveBusinessCard] = useState('real-estate'); // Default to real estate
   const [scrollY, setScrollY] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -123,6 +126,14 @@ const Home = () => {
 
   const handleLoaderComplete = () => {
     setIsLoading(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -367,7 +378,7 @@ const Home = () => {
           
           <div className="bank-cta-section">
             <p className="bank-cta-text">SMART BUYERS STAY UPDATED — BE ONE OF THEM.</p>
-            <button className="bank-cta-button">GET UPDATES NOW</button>
+            <button className="bank-cta-button" onClick={openModal}>GET UPDATES NOW</button>
           </div>
           
           <div className="bank-logos-section">
@@ -488,6 +499,8 @@ const Home = () => {
       </section>
       
       <Footer />
+      
+      <Model isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };

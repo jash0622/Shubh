@@ -265,7 +265,7 @@ function Project() {
           {currentGlimpseTab === 'interior' ? (
             <Swiper
               modules={[Navigation, Autoplay]}
-              spaceBetween={30}
+              spaceBetween={window.innerWidth <= 768 ? 15 : 30}
               slidesPerView={2}
               loop={true}
               autoplay={{
@@ -295,7 +295,7 @@ function Project() {
           ) : (
             <Swiper
               modules={[Navigation, Autoplay]}
-              spaceBetween={30}
+              spaceBetween={window.innerWidth <= 768 ? 15 : 30}
               slidesPerView={2}
               loop={true}
               autoplay={{
@@ -402,7 +402,7 @@ function Project() {
           
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={0}
+            spaceBetween={window.innerWidth <= 768 ? 10 : 0}
             slidesPerView={3}
             loop={true}
             autoplay={{
@@ -452,7 +452,7 @@ function Project() {
           
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={20}
+            spaceBetween={window.innerWidth <= 768 ? 15 : 20}
             slidesPerView={3}
             loop={true}
             autoplay={{
