@@ -1369,18 +1369,20 @@ html, body {
 
   .story-left-frame {
     position: static !important;
-    width: 90% !important;
-    height: 50vh !important;
+    width: 95% !important;
+    height: 70vh !important;
     margin: 1rem auto !important;
     opacity: 1 !important;
     order: 1;
+    overflow: hidden;
   }
 
   .story-left {
-    height: 100% !important;
+    height: 120% !important;
     background-size: cover !important;
     background-position: center !important;
-    transform: none !important;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
   }
 
   .story-badge {
@@ -1398,18 +1400,20 @@ html, body {
 
   .story-right-frame {
     position: static !important;
-    width: 90% !important;
-    height: 50vh !important;
+    width: 95% !important;
+    height: 70vh !important;
     margin: 1rem auto !important;
     opacity: 1 !important;
     order: 3;
+    overflow: hidden;
   }
 
   .story-right {
-    height: 100% !important;
+    height: 120% !important;
     background-size: cover !important;
     background-position: center !important;
-    transform: none !important;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
   }
 
   .foundations-title {
@@ -1856,8 +1860,15 @@ html, body {
   .story-left-frame, .story-right-frame { 
     position: static; 
     width: 100%; 
-    height: 40vh; 
-    margin-bottom: 2rem; 
+    height: 60vh; 
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .story-left, .story-right {
+    height: 120% !important;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
   }
   
   .story-badge { top: 15vh; }
@@ -1991,11 +2002,20 @@ html, body {
   .story-text { font-size: 0.8rem; padding: 0 1rem; }
   
   .combined-story-foundations { padding: 3rem 0; }
-  .story-left-frame, .story-right-frame { height: 30vh; }
+  .story-left-frame, .story-right-frame { 
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .story-left, .story-right {
+    height: 180% !important;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+  }
   .story-badge { width: 100px; height: 100px; top: 10vh; }
   .story-badge span { font-size: 0.8rem; }
   
-  .foundations-title { font-size: 1.8rem; margin-top: 4rem; margin-bottom: 3rem; }
+  .foundations-title { font-size: 1.8rem; margin-top: -4rem; margin-bottom: 3rem; }
   .foundations-tagline { font-size: 3rem; margin-bottom: -1rem; margin-top: -8.5rem; }
   
   .leaf-parallax { width: 150px; right: 0; top: 300px; }

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import './Project.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -265,9 +266,10 @@ function Project() {
           {currentGlimpseTab === 'interior' ? (
             <Swiper
               modules={[Navigation, Autoplay]}
-              spaceBetween={window.innerWidth <= 768 ? 15 : 30}
-              slidesPerView={2}
+              spaceBetween={15}
+              slidesPerView={1}
               loop={true}
+              centeredSlides={true}
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
@@ -275,6 +277,18 @@ function Project() {
               navigation={{
                 nextEl: '.glimpse-swiper-button-next',
                 prevEl: '.glimpse-swiper-button-prev',
+              }}
+              breakpoints={{
+                779: {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  centeredSlides: false,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                  centeredSlides: false,
+                }
               }}
               key={currentGlimpseTab}
               className="glimpse-swiper"
@@ -295,9 +309,10 @@ function Project() {
           ) : (
             <Swiper
               modules={[Navigation, Autoplay]}
-              spaceBetween={window.innerWidth <= 768 ? 15 : 30}
-              slidesPerView={2}
+              spaceBetween={15}
+              slidesPerView={1}
               loop={true}
+              centeredSlides={true}
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
@@ -305,6 +320,18 @@ function Project() {
               navigation={{
                 nextEl: '.glimpse-swiper-button-next',
                 prevEl: '.glimpse-swiper-button-prev',
+              }}
+              breakpoints={{
+                779: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                  centeredSlides: false,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                  centeredSlides: false,
+                }
               }}
               key={currentGlimpseTab}
               className="glimpse-swiper"
@@ -402,16 +429,29 @@ function Project() {
           
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={window.innerWidth <= 768 ? 10 : 0}
-            slidesPerView={3}
+            spaceBetween={0}
+            slidesPerView={1}
             loop={true}
+            centeredSlides={true}
             autoplay={{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false,
             }}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.amenity-swiper-button-next',
+              prevEl: '.amenity-swiper-button-prev',
+            }}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                centeredSlides: false,
+              }
             }}
             key={currentAmenityTab}
             className="amenity-swiper"
@@ -426,8 +466,8 @@ function Project() {
                 </div>
               </SwiperSlide>
             ))}
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
+            <div className="amenity-swiper-button-prev"></div>
+            <div className="amenity-swiper-button-next"></div>
           </Swiper>
         </div>
       </section>
@@ -451,25 +491,55 @@ function Project() {
           </div>
           
           <Swiper
-            modules={[Navigation, Autoplay]}
-            spaceBetween={window.innerWidth <= 768 ? 15 : 20}
-            slidesPerView={3}
+            modules={[Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
             loop={true}
+            centeredSlides={true}
             autoplay={{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false,
             }}
-            navigation={{
-              nextEl: '.floor-plan-swiper-button-next',
-              prevEl: '.floor-plan-swiper-button-prev',
+            pagination={{
+              el: '.floor-plan-pagination',
+              clickable: true,
+              bulletClass: 'floor-plan-bullet',
+              bulletActiveClass: 'floor-plan-bullet-active',
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                centeredSlides: true,
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                centeredSlides: true,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                centeredSlides: false,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                centeredSlides: false,
+              }
             }}
             className="floor-plan-swiper"
           >
             <SwiperSlide>
               <div className="floor-plan-card">
-                <img src="/type-1p-floorplan.jpg" alt="Type 1P Floor Plan" />
+                <img src="/type-2p-floorplan.jpg" alt="Type 2P Floor Plan" />
                 <div className="plan-details">
-                  <h3>TYPE 1P</h3>
+                  <h3>TYPE 2 P</h3>
                   <p>(3.5 BHK + SERVICE PERSONNEL)</p>
                 </div>
               </div>
@@ -477,9 +547,9 @@ function Project() {
             
             <SwiperSlide>
               <div className="floor-plan-card">
-                <img src="/type-2p-floorplan.jpg" alt="Type 2P Floor Plan" />
+                <img src="/type-1p-floorplan.jpg" alt="Type 1P Floor Plan" />
                 <div className="plan-details">
-                  <h3>TYPE 2P</h3>
+                  <h3>TYPE 1 P</h3>
                   <p>(3.5 BHK + SERVICE PERSONNEL)</p>
                 </div>
               </div>
@@ -489,7 +559,7 @@ function Project() {
               <div className="floor-plan-card">
                 <img src="/type-3p-floorplan.jpg" alt="Type 3P Floor Plan" />
                 <div className="plan-details">
-                  <h3>TYPE 3P</h3>
+                  <h3>TYPE 3 P</h3>
                   <p>(3.5 BHK + SERVICE PERSONNEL)</p>
                 </div>
               </div>
@@ -514,10 +584,9 @@ function Project() {
                 </div>
               </div>
             </SwiperSlide>
-            
-            <div className="floor-plan-swiper-button-prev"></div>
-            <div className="floor-plan-swiper-button-next"></div>
           </Swiper>
+          
+          <div className="floor-plan-pagination"></div>
         </div>
       </section>
 

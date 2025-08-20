@@ -191,7 +191,7 @@ const Home = () => {
         {/* Left image frame - below text paragraph, slightly overflowing upward */}
         <div className="image-frame story-left-frame"
              style={{
-               opacity: scrollY > window.innerHeight * 1.5 ? 1 : 0,
+               opacity: window.innerWidth <= 768 ? 1 : (scrollY > window.innerHeight * 1.5 ? 1 : 0),
                transition: 'opacity 0.5s ease-in-out'
              }}>
           <div className="story-left"
@@ -203,7 +203,7 @@ const Home = () => {
         {/* Right image frame - taller height, positioned higher to overlay story description */}
         <div className="image-frame story-right-frame"
              style={{
-               opacity: scrollY > window.innerHeight * 1.0 ? 1 : 0,
+               opacity: window.innerWidth <= 768 ? 1 : (scrollY > window.innerHeight * 1.0 ? 1 : 0),
                transition: 'opacity 0.5s ease-in-out'
              }}>
           <div className="story-right"

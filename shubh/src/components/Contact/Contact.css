@@ -267,6 +267,10 @@
 }
 
 @media (max-width: 768px) {
+  .contact-hero {
+    height: 100vh;
+  }
+  
   .contact-hero-subtitle {
     font-size: 12px;
     letter-spacing: 2px;
@@ -391,7 +395,7 @@
 
 /* Mobile Small (320px - 479px) */
 @media (max-width: 479px) {
-  .contact-hero { height: 80vh; }
+  .contact-hero { height: 100vh; }
   .contact-hero-content { padding: 0 15px; }
   .contact-hero-title { 
     font-size: 1.8rem; 
@@ -507,7 +511,7 @@
 
 /* Ultra Small Mobile (below 320px) */
 @media (max-width: 319px) {
-  .contact-hero { height: 70vh; }
+  .contact-hero { height: 100vh; }
   .contact-hero-title { 
     font-size: 1.6rem; 
     margin-bottom: 25px; 
