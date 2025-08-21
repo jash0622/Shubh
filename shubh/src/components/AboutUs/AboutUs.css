@@ -293,7 +293,7 @@
   margin-top: 350px;
   text-align: center;
   z-index: 1005;
-  margin-left: 300px;
+  margin-left: 500px;
   
 }
 
@@ -323,7 +323,7 @@
 }
 
 .vision-description {
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   line-height: 1.5;
   font-weight: 300;
