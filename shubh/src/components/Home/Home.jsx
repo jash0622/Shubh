@@ -276,6 +276,7 @@ const Home = () => {
             </video>
             <img src="/image-building.png" alt="Signature Building" className="building-image" />
           </div>
+          <div className="signature-background"></div>
           <div className="signature-logo">
             <div className="logo-background"></div>
             <img src="/Seggovias.png" alt="Seggovias Logo" />
