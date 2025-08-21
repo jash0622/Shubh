@@ -111,7 +111,7 @@
 
 .schedule-btn {
   background: transparent;
-  border: 1px solid white;
+  
   color: white;
   padding: 12px 24px;
   font-size: 12px;
@@ -119,12 +119,13 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 2px;
+  
 }
 
 .schedule-btn:hover {
   background: #D4AF37;
   color: #211032;
+  border-radius: 40px;
 }
 
 /* Mobile responsiveness */
