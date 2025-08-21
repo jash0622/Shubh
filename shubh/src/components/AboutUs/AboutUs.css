@@ -191,7 +191,7 @@
 /* Right Container - Smaller Size */
 .parallax-right {
   position: absolute;
-  top: 240vh;
+  top: 230vh;
   left: 48vw;
   width: 25vw;
   height: 100vh;
@@ -204,7 +204,7 @@
 /* Left Container - Smaller Size */
 .parallax-left {
   position: absolute;
-  top: 240vh;
+  top: 230vh;
   left: 0;
   width: 45vw;
   height: 150vh;
