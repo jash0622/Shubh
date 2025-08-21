@@ -571,7 +571,7 @@ html, body {
 
 .signature-background {
   position: absolute;
-  bottom: 35%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -584,7 +584,7 @@ html, body {
 
 .signature-logo {
   position: absolute;
-  bottom: 35%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
