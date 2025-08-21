@@ -142,6 +142,13 @@ const Header = () => {
             >
               CONTACT US
             </Link>
+            <Link 
+              to="/gallery" 
+              className={`mobile-nav-link ${isActiveLink('/gallery') ? 'active' : ''}`}
+              onClick={closeMobileMenu}
+            >
+              GALLERY
+            </Link>
           </nav>
         </div>
       </div>

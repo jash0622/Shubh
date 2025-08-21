@@ -78,7 +78,7 @@ html, body {
 
 .scroll-button {
   background: transparent;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   padding: 15px 30px;
   font-size: 0.9rem;
@@ -86,7 +86,7 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Inter', 'Segoe UI', sans-serif;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .scroll-button:hover {
@@ -1601,8 +1601,9 @@ html, body {
   }
 
   .slide-oval {
-    width: 280px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
     margin: 0;
     opacity: 1;
     transform: none;
@@ -1939,7 +1940,7 @@ html, body {
   .subh-edge-title { font-size: 3rem; }
   .experience-text { font-size: 3rem; }
   
-  .slide-oval { width: 250px; height: 320px; }
+  .slide-oval { width: 300px; height: 300px; border-radius: 50%; }
   .slide-title { font-size: 1rem; }
   .slide-description { font-size: 0.8rem; }
   
@@ -1978,7 +1979,7 @@ html, body {
   .subh-edge-title { font-size: 2.5rem; }
   .experience-text { font-size: 2.5rem; }
   
-  .slide-oval { width: 220px; height: 280px; }
+  .slide-oval { width: 280px; height: 280px; border-radius: 50%; }
   
   .frontiers-title { font-size: 2rem; }
   .frontiers-subtitle { font-size: 3.5rem; }
@@ -2030,12 +2031,12 @@ html, body {
   
   .signature-development { padding: 3rem 0; }
   .signature-header { top: 10rem; left: 1rem; }
-  .signature-header h2 { font-size: 0.8rem; }
-  .video-container { width: 95vw; height: 60vh; bottom: 100px; }
+  .signature-header h2 { font-size: 1rem; }
+  .video-container { width: 85dvw; height: 60dvh; bottom: 100px; }
   .girl-image { width: 100px; left: 2%; bottom: 80vh; }
-  .signature-logo { bottom: 300px; }
+  .signature-logo { margin-top: -2rem; margin-bottom: 2rem; text-align: center; position: static; }
   .signature-logo img { max-width: 200px; }
-  .signature-footer { bottom: 150px; max-width: 300px; }
+  .signature-footer { bottom: 150px; max-width: 400px; }
   .signature-footer p { font-size: 1rem; }
   
   .explore-project-section { padding-top: 30px; }
@@ -2051,7 +2052,7 @@ html, body {
   
   .values-slideshow-section { height: auto; padding: 2rem 0; bottom: 100px; }
   .slides-container { width: 95%; }
-  .slide-oval { width: 180px; height: 240px; padding: 1rem; }
+  .slide-oval { width: 280px; height: 280px; border-radius: 50%; padding: 1rem; }
   .slide-icon { width: 40px; height: 40px; margin-bottom: 1rem; }
   .slide-title { font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 1rem; }
   .slide-description { font-size: 0.7rem; max-width: 150px; }

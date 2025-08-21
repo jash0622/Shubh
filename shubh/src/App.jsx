@@ -9,6 +9,7 @@ import AboutUs from './components/AboutUs/AboutUs.jsx';
 import TermsConditions from './components/TermsConditions/TermsConditions.jsx';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy.jsx';
 import Model from './components/model/model.jsx';
+import Gallary from './components/Gallary/Gallary.jsx';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -65,6 +66,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/term&conditions" element={<TermsConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/gallery" element={<Gallary />} />
         </Routes>
         <Model isOpen={isModalOpen} onClose={closeModal} />
       </div>

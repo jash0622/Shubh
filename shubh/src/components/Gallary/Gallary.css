@@ -1,0 +1,318 @@
+.gallery-hall-collections {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+/* Hero Section */
+.gallery-hero-section {
+  padding: 60px 40px;
+  text-align: center;
+  background: white;
+}
+
+.gallery-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.gallery-hero-arrow {
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Accordion Gallery Section */
+.gallery-accordion-section {
+  padding: 80px 40px;
+  background: #f8f8f8;
+}
+
+.gallery-accordion-container {
+  display: flex;
+  height: 600px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 8px; /* Gap between images */
+  overflow: hidden;
+}
+
+.gallery-accordion-item {
+  position: relative;
+  flex: 0 0 120px; /* All items start as narrow strips */
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: #333;
+  border-radius: 0; /* Sharp corners */
+}
+
+/* First item starts expanded by default */
+.gallery-accordion-item:first-child {
+  flex: 1;
+}
+
+/* When any item is hovered, it expands */
+.gallery-accordion-item:hover {
+  flex: 1; /* Expand to take available space */
+}
+
+/* When any other item is hovered, make first item narrow */
+.gallery-accordion-container:hover .gallery-accordion-item:first-child {
+  flex: 0 0 120px;
+}
+
+/* When first item itself is hovered, keep it expanded */
+.gallery-accordion-item:first-child:hover {
+  flex: 1;
+}
+
+.gallery-accordion-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-accordion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-accordion-item:hover .gallery-accordion-image img {
+  transform: scale(1.02);
+}
+
+.gallery-accordion-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  padding: 30px;
+}
+
+/* Show content on first item by default */
+.gallery-accordion-item:first-child .gallery-accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Show content only on hovered items */
+.gallery-accordion-item:hover .gallery-accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide content on first item when other items are hovered */
+.gallery-accordion-container:hover .gallery-accordion-item:first-child .gallery-accordion-content {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Show content on first item when it's specifically hovered */
+.gallery-accordion-item:first-child:hover .gallery-accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #666;
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.gallery-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+.gallery-read-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+}
+
+.gallery-read-more:hover {
+  gap: 12px;
+  color: #000;
+}
+
+.gallery-read-more svg {
+  transition: transform 0.3s ease;
+  width: 16px;
+  height: 10px;
+}
+
+.gallery-read-more:hover svg {
+  transform: translateX(4px);
+}
+
+/* Remove all overlays and borders */
+.gallery-accordion-item::before {
+  display: none;
+}
+
+.gallery-accordion-item {
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .gallery-accordion-container {
+    height: 500px;
+    gap: 6px;
+  }
+  
+  .gallery-accordion-item {
+    flex: 0 0 100px;
+  }
+  
+  .gallery-accordion-item:first-child {
+    flex: 1;
+  }
+  
+  .gallery-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .gallery-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-accordion-section {
+    padding: 40px 20px;
+  }
+  
+  .gallery-accordion-container {
+    height: 400px;
+    gap: 4px;
+  }
+  
+  .gallery-accordion-item {
+    flex: 0 0 80px;
+  }
+  
+  .gallery-accordion-item:first-child {
+    flex: 1;
+  }
+  
+  .gallery-accordion-content {
+    padding: 20px;
+  }
+  
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+  
+  .gallery-hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-hero-section {
+    padding: 40px 20px;
+  }
+  
+  .gallery-accordion-container {
+    height: 350px;
+    gap: 3px;
+  }
+  
+  .gallery-accordion-item {
+    flex: 0 0 60px;
+  }
+  
+  .gallery-accordion-item:first-child {
+    flex: 1;
+  }
+  
+  .gallery-accordion-content {
+    padding: 15px;
+  }
+  
+  .gallery-title {
+    font-size: 1.2rem;
+  }
+  
+  .gallery-label {
+    font-size: 9px;
+  }
+  
+  .gallery-read-more {
+    font-size: 12px;
+  }
+}
+
+/* Smooth image scaling */
+.gallery-accordion-item:not(:hover) .gallery-accordion-image img {
+  transform: scale(1);
+}
+
+/* Enhanced content animation */
+.gallery-accordion-content {
+  pointer-events: none;
+}
+
+.gallery-accordion-item:hover .gallery-accordion-content,
+.gallery-accordion-item:first-child .gallery-accordion-content {
+  pointer-events: auto;
+}
+
+/* Focus states for accessibility */
+.gallery-accordion-item:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.gallery-accordion-item:focus {
+  flex: 1;
+}
+
+.gallery-accordion-item:focus .gallery-accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure smooth transitions for all states */
+.gallery-accordion-item * {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

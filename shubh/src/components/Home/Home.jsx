@@ -546,7 +546,7 @@ const ValuesSlideshow = () => {
     <div className="values-slideshow">
       <Swiper
         modules={[Navigation, Autoplay]}
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={20}
         loop={true}
         autoplay={{
@@ -556,6 +556,11 @@ const ValuesSlideshow = () => {
         navigation={{
           prevEl: '.home-nav-arrow-left',
           nextEl: '.home-nav-arrow-right',
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
         }}
         className="slides-container"
       >

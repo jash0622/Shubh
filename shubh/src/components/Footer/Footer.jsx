@@ -41,6 +41,12 @@ function Footer() {
             >
               CONTACT US
             </Link>
+            <Link 
+              to="/gallery" 
+              className={`${isActiveLink('/gallery') ? 'active' : ''}`}
+            >
+              GALLERY
+            </Link>
           </div>
           
           <div className="social-links">
