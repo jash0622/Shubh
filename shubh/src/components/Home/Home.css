@@ -56,6 +56,7 @@ html, body {
   padding: 0 20px;
   position: relative;
   z-index: 10;
+  margin-bottom: -12rem;
 }
 
 .hero-title {
@@ -557,14 +558,15 @@ html, body {
 
 .signature-footer {
   position: absolute;
-  bottom: 300px;
+  bottom: 50px;
   max-width: 450px;
   text-align: center;
   z-index: 10;
+  margin-bottom: 10rem;
 }
 
 .signature-footer p {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   line-height: 1.3;
   color: #5a4e46;
 }
