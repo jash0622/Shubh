@@ -190,7 +190,7 @@ const AboutUs = () => {
       <Header />
       {/* Background Video */}
       <video className="background-video" autoPlay muted loop>
-        <source src="/aboutusvideo.mp4" type="video/mp4" />
+        <source src="/project-hero.mp4" type="video/mp4" />
       </video>
 
       {/* Dark Overlay */}
@@ -231,7 +231,9 @@ const AboutUs = () => {
         </div>
 
         <div className="flower-image">
-          <img src="/flower.webp" alt="Flower" />
+          <video autoPlay muted >
+            <source src="/abut.webm" type="video/webm" />
+          </video>
         </div>
       </section>
 

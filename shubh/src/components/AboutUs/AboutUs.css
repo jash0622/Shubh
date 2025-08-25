@@ -175,15 +175,15 @@
 
 .flower-image {
   position: absolute;
-  left: 50px;
-  top: 200px;
+  left: 130px;
+  top: -160px;
   z-index: 1;
-  opacity: 0.15;
+  opacity: 0.3;
 }
 
-.flower-image img {
-  width: 800px;
-  height: 800px;
+.flower-image video {
+  width: 1000px;
+  height: 1000px;
   object-fit: cover;
   filter: sepia(30%) saturate(60%) brightness(1.1);
 }
@@ -340,9 +340,9 @@
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(rgba(248, 245, 240, 0.9), #f5eee4), url('/pattern.png');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(248, 245, 240, 0.8), rgba(245, 238, 228, 0.8)), url('/white-fabric-cloth-texture-as-background-scaled.jpg'), url('/pattern.png');
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
   background-attachment: fixed;
   padding: 120px 40px 100px 40px;
   z-index: 3;
