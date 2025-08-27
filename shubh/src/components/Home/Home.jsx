@@ -164,12 +164,7 @@ const Home = () => {
           <p className="welcome-tagline">Welcome home.</p>
           <img src="/rings-xxl.webp" alt="" className="rings-parallax" />
           <p className="philosophy-text">
-            At Subh Housing, we believe that a home is not<br />
-            just made of walls — it's built with trust, dreams,<br />
-            and a deep sense of belonging. Founded in 2023,<br />
-            our journey began with a simple yet powerful<br />
-            vision: to create spaces that feel like home even<br />
-            before you move in.
+            At Subh Housing, we believe that a home is not just made of walls — it's built with trust, dreams, and a deep sense of belonging. Founded in 2023, our journey began with a simple yet powerful vision: to create spaces that feel like home even before you move in.
           </p>
         </div>
       </section>
@@ -213,7 +208,7 @@ const Home = () => {
         </div>
         
         {/* Badge overlay on top of both images */}
-        <div className="story-badge">
+        <div className="story-badge" onClick={() => window.location.href = '/aboutus'}>
           <span>SUBH<br />STORY</span>
         </div>
 
@@ -301,8 +296,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Excellence in Details Section */}
-      <section className="excellence-section">
+      {/* Combined Excellence and Values Section */}
+      <section className="excellence-values-section">
         <div className="excellence-content">
           <h3 className="excellence-subtitle">EXCELLENCE</h3>
           <h3 className="excellence-subtitle">IN DETAILS</h3>
@@ -311,11 +306,9 @@ const Home = () => {
             <h2 className="subh-edge-title">THE SUBH EDGE</h2>
           </div>
         </div>
-      </section>
-
-      {/* Values Slideshow Section */}
-      <section className="values-slideshow-section">
-        <ValuesSlideshow />
+        <div className="values-slideshow-section">
+          <ValuesSlideshow />
+        </div>
       </section>
 
       {/* Growing Across Frontiers Section */}
