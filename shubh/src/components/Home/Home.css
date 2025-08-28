@@ -91,10 +91,10 @@ html, body {
 .scroll-button {
   margin-bottom: -30px;
   background: transparent;
-  border: 1px solid white;
+  backdrop-filter: blur(10px);
   color: white;
-  padding: 15px 30px;
-  font-size: 0.9rem;
+  padding: 10px 15px;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -103,8 +103,12 @@ html, body {
 }
 
 .scroll-button:hover {
-  background: white;
-  color: #333;
+  background: black;
+  color: white; 
+  backdrop-filter: blur(15px);
+  border: none;
+   transform: scale(0.95); /* Thoda chhota hoga */
+  transition: transform 0.3s ease; /* Smooth effect */
 }
 
 /* Welcome Section */
