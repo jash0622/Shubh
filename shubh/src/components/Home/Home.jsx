@@ -146,12 +146,12 @@ const Home = () => {
         <video className="hero-video" autoPlay muted loop playsInline>
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
+        <div className="hero-gradient-overlay"></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">A NEW BEGINNING</h1>
           <p className="hero-subtitle">
-            Discover Future-Ready Residential And Commercial Spaces<br />
-            Crafted With Quality, Integrity, And Vision.
+            Elevating lifestyles through thoughtfully designed high-end residences that combine modern architecture with luxurious finishes and functional layouts.
           </p>
           <button className="scroll-button">SCROLL TO EXPLORE</button>
         </div>
@@ -186,24 +186,24 @@ const Home = () => {
         {/* Left image frame - below text paragraph, slightly overflowing upward */}
         <div className="image-frame story-left-frame"
              style={{
-               opacity: window.innerWidth <= 768 ? 1 : (scrollY > window.innerHeight * 1.5 ? 1 : 0),
+              opacity: scrollY > window.innerHeight * 1.5 ? 1 : 0,
                transition: 'opacity 0.5s ease-in-out'
              }}>
           <div className="story-left"
                style={{
-                 transform: `translateY(${scrollY * -0.2}px)`
+                  transform: `translateY(${scrollY * -0.2}px)`
                }}></div>
         </div>
         
         {/* Right image frame - taller height, positioned higher to overlay story description */}
         <div className="image-frame story-right-frame"
              style={{
-               opacity: window.innerWidth <= 768 ? 1 : (scrollY > window.innerHeight * 1.0 ? 1 : 0),
+                           opacity: scrollY > window.innerHeight * 1.0 ? 1 : 0,
                transition: 'opacity 0.5s ease-in-out'
              }}>
           <div className="story-right"
                style={{
-                 transform: `translateY(${scrollY * -0.3}px)`
+                  transform: `translateY(${scrollY * -0.3}px)`
                }}></div>
         </div>
         

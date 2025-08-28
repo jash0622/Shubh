@@ -190,11 +190,8 @@ const AboutUs = () => {
       <Header />
       {/* Background Video */}
       <video className="background-video" autoPlay muted loop>
-        <source src="/project-hero.mp4" type="video/mp4" />
+        <source src="/aboutus.mp4" type="video/mp4" />
       </video>
-
-      {/* Dark Overlay */}
-      <div className="video-overlay"></div>
 
 
       {/* Main Content */}
