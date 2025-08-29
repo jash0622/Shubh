@@ -163,7 +163,7 @@ const Home = () => {
           <h2 className="welcome-title">WELCOME TO<br />SUBH HOUSING</h2>
           <p className="welcome-tagline">Welcome home.</p>
           <img src="/rings-xxl.webp" alt="" className="rings-parallax" />
-          <p className="philosophy-text">
+          <p className="philosophy-text" style={{fontWeight: '900', fontFamily: 'Inter, sans-serif', WebkitFontSmoothing: 'antialiased'}}>
             At Subh Housing, we believe that a home is not just made of walls — it's built with trust, dreams, and a deep sense of belonging. Founded in 2023, our journey began with a simple yet powerful vision: to create spaces that feel like home even before you move in.
           </p>
         </div>
@@ -355,8 +355,9 @@ const Home = () => {
 
       {/* Explore Project Section */}
       <section className="explore-project-section">
+        <div className="explore-bg-layer"></div>
         <img src="/leaf-md (1).webp" alt="" className="leaf-parallax-explore" />
-        <div className="explore-button" onClick={() => window.location.href = '/projects'}>
+        <div className="explore-button" onClick={() => window.location.href = '/projects'} style={{position: 'relative', zIndex: 10}}>
           <span>EXPLORE</span>
           <span>PROJECT</span>
         </div>
