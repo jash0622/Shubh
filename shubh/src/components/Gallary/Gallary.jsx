@@ -12,7 +12,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="gallery-hero-section">
         <div className="gallery-hero-content">
-          <h1 className="gallery-hero-title">Collections - Accordion Horizontal</h1>
+          <h1 className="gallery-hero-title">Subh Housing - Gallery</h1>
           <div className="gallery-hero-arrow">
             <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
               <path d="M8 10L0 0H16L8 10Z" fill="currentColor" />

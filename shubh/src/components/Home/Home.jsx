@@ -219,40 +219,106 @@ const Home = () => {
         <img src="/leaf-xxxl.webp" alt="" className="leaf-parallax" />
 
         <div className={`three-panels ${activeCard}`}>
-          <div 
-            className="panel purpose-panel"
-            onMouseEnter={() => handleCardHover('purpose')}
-            onMouseLeave={handleCardLeave}
+          <Swiper
+            modules={[Navigation]}
+            slidesPerView={1}
+            spaceBetween={0}
+            navigation={{
+              prevEl: '.three-panels-nav-left',
+              nextEl: '.three-panels-nav-right',
+            }}
+            breakpoints={{
+              479: {
+                slidesPerView: 1,
+              },
+            }}
+            className="three-panels-swiper"
           >
-            <div className={`panel-card ${hoveredCard === 'purpose' ? 'active' : ''}`}>
-              <h3 className="panel-header">
-                <span className="header-text">PURPOSE</span>
-              </h3>
-              <p>Every space is built with intent, not just profit.</p>
+            <SwiperSlide>
+              <div 
+                className="panel purpose-panel"
+                onClick={() => handleCardHover('purpose')}
+              >
+                <div className={`panel-card ${hoveredCard === 'purpose' ? 'active' : ''}`}>
+                  <h3 className="panel-header">
+                    <span className="header-text">PURPOSE</span>
+                  </h3>
+                  <p>Every space is built with intent, not just profit.</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div 
+                className="panel peace-panel"
+                onClick={() => handleCardHover('peace')}
+              >
+                <div className={`panel-card ${hoveredCard === 'peace' ? 'active' : ''}`}>
+                  <h3 className="panel-header">
+                    <span className="header-text">PEACE</span>
+                  </h3>
+                  <p>Noise-reducing layouts and nature-first planning for mental ease.</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div 
+                className="panel progress-panel"
+                onClick={() => handleCardHover('progress')}
+              >
+                <div className={`panel-card ${hoveredCard === 'progress' ? 'active' : ''}`}>
+                  <h3 className="panel-header">
+                    <span className="header-text">PROGRESS</span>
+                  </h3>
+                  <p>Smart infrastructure that evolves with you.</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          
+          <button className="three-panels-nav-arrow three-panels-nav-left">
+            ←
+          </button>
+          <button className="three-panels-nav-arrow three-panels-nav-right">
+            →
+          </button>
+          
+          {/* Desktop version - hidden on mobile */}
+          <div className="desktop-panels">
+            <div 
+              className="panel purpose-panel"
+              onMouseEnter={() => handleCardHover('purpose')}
+              onMouseLeave={handleCardLeave}
+            >
+              <div className={`panel-card ${hoveredCard === 'purpose' ? 'active' : ''}`}>
+                <h3 className="panel-header">
+                  <span className="header-text">PURPOSE</span>
+                </h3>
+                <p>Every space is built with intent, not just profit.</p>
+              </div>
             </div>
-          </div>
-          <div 
-            className="panel peace-panel"
-            onMouseEnter={() => handleCardHover('peace')}
-            onMouseLeave={handleCardLeave}
-          >
-            <div className={`panel-card ${hoveredCard === 'peace' ? 'active' : ''}`}>
-              <h3 className="panel-header">
-                <span className="header-text">PEACE</span>
-              </h3>
-              <p>Noise-reducing layouts and nature-first planning for mental ease.</p>
+            <div 
+              className="panel peace-panel"
+              onMouseEnter={() => handleCardHover('peace')}
+              onMouseLeave={handleCardLeave}
+            >
+              <div className={`panel-card ${hoveredCard === 'peace' ? 'active' : ''}`}>
+                <h3 className="panel-header">
+                  <span className="header-text">PEACE</span>
+                </h3>
+                <p>Noise-reducing layouts and nature-first planning for mental ease.</p>
+              </div>
             </div>
-          </div>
-          <div 
-            className="panel progress-panel"
-            onMouseEnter={() => handleCardHover('progress')}
-            onMouseLeave={handleCardLeave}
-          >
-            <div className={`panel-card ${hoveredCard === 'progress' ? 'active' : ''}`}>
-              <h3 className="panel-header">
-                <span className="header-text">PROGRESS</span>
-              </h3>
-              <p>Smart infrastructure that evolves with you.</p>
+            <div 
+              className="panel progress-panel"
+              onMouseEnter={() => handleCardHover('progress')}
+              onMouseLeave={handleCardLeave}
+            >
+              <div className={`panel-card ${hoveredCard === 'progress' ? 'active' : ''}`}>
+                <h3 className="panel-header">
+                  <span className="header-text">PROGRESS</span>
+                </h3>
+                <p>Smart infrastructure that evolves with you.</p>
+              </div>
             </div>
           </div>
         </div>
