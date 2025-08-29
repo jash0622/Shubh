@@ -1,6 +1,6 @@
 /* ===== FOOTER ===== */
 .footer-content {
-  background: #1E0A28;
+  background: #11001c;
   padding: 2rem 0;
   color: white;
 }
@@ -46,7 +46,7 @@
 .social-links a {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #11001c;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .footer-contact {
-  background: linear-gradient(135deg,#1E0A28 0%, rgba(26, 15, 46, 0.8) 100%), url('/archite-scaled.jpg');
+  background: linear-gradient(135deg,#11001c 0%, rgba(26, 15, 46, 0.8) 100%), url('/archite-scaled.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@
 }
 
 .footer-bottom {
-  background: #0F051A;
+  background: #11001c;
   padding: 2rem 0;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;

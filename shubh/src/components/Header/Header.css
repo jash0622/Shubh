@@ -115,7 +115,7 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   border-radius: 40px;
-  background-color: rgba(33, 16, 50);
+  background-color: #11001c;
   display: flex;
   text-decoration: none;
   font-stretch: condensed;
@@ -129,7 +129,7 @@
 
 .schedule-btn:hover {
   background: #D4AF37;
-  color: #211032;
+  color: #11001c;
   border-radius: 40px;
 }
 
@@ -253,7 +253,7 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   border-radius: 40px;
-  background-color: rgba(33, 16, 50);
+  background-color: #11001c;
   display: flex;
   text-decoration: none;
   font-stretch: condensed;
@@ -267,7 +267,7 @@
 
 .schedule-btn:hover {
   background: #D4AF37;
-  color: #211032;
+  color: #11001c;
   border-radius: 40px;
 }
   
@@ -391,7 +391,7 @@
   letter-spacing: 2px;
   color: #FFFFFF;
   border-radius: 40px;
-  background-color: rgba(33, 16, 50);
+  background-color: #11001c;
   display: flex;
   text-decoration: none;
   font-stretch: condensed;
@@ -405,7 +405,7 @@
 
 .schedule-btn:hover {
   background: #D4AF37;
-  color: #211032;
+  color: #11001c;
   border-radius: 40px;
 }
 }

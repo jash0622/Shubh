@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Lenis from '@studio-freight/lenis';
 import Home from './components/Home/Home.jsx';
 import Project from './components/Project/Project.jsx';
-import './App.css';
 import Contact from './components/Contact/Contact.jsx';
 import AboutUs from './components/AboutUs/AboutUs.jsx';
 import TermsConditions from './components/TermsConditions/TermsConditions.jsx';

@@ -356,7 +356,7 @@ const Home = () => {
       {/* Explore Project Section */}
       <section className="explore-project-section">
         <img src="/leaf-md (1).webp" alt="" className="leaf-parallax-explore" />
-        <div className="explore-button">
+        <div className="explore-button" onClick={() => window.location.href = '/projects'}>
           <span>EXPLORE</span>
           <span>PROJECT</span>
         </div>
@@ -381,11 +381,11 @@ const Home = () => {
       <section className="growing-frontiers-section">
         <div className="frontiers-content">
           <div className="frontiers-text">
-            <h2 className="frontiers-title">GROWING ACROSS<br />FRONTIERS</h2>
+            <h2 className="frontiers-title">GROWING ACROSS FRONTIERS</h2>
             <p className="frontiers-subtitle">Our business</p>
             <p className="frontiers-description">
-              From developing high-end homes to acquiring prime land<br />
-              and investing in India's sporting spirit, our ventures reflect<br />
+              From developing high-end homes to acquiring prime land
+              and investing in India's sporting<br /> spirit, our ventures reflect
               a bold, balanced vision for growth.
             </p>
           </div>
