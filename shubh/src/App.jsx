@@ -67,7 +67,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/gallery" element={<Gallary />} />
         </Routes>
-        <Model isOpen={isModalOpen} onClose={closeModal} />
+        {/* <Model isOpen={isModalOpen} onClose={closeModal} /> */}
       </div>
     </Router>
   );

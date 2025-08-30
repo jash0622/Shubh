@@ -71,18 +71,6 @@ html, body {
   margin-top: 20rem;
 }
 
-/* Ensure proper centering on all devices */
-@media (max-width: 768px) {
-  .hero-content {
-    margin-top: 0 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    text-align: center;
-  }
-}
 
 .hero-title {
   font-size: 4.3rem !important;
@@ -101,18 +89,22 @@ html, body {
 }
 
 .scroll-button {
-  margin-bottom: -30px;
-  background: transparent!important;
-  backdrop-filter: blur(300px);
+  margin-bottom: 30px;
+  background: rgba(57, 59, 59, 0.4); /* semi-transparent glassy color */
+  backdrop-filter: blur(12px);        /* blur effect for glass */
+  -webkit-backdrop-filter: blur(12px); /* for Safari */
   color: white;
-  padding: 10px 15px;
-  font-size: 0.8rem;
+  padding: 8px 15px;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 20px;
   transform: scale(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle glass border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* soft shadow */
 }
+
 
 .scroll-button:hover {
   background: black;
@@ -138,7 +130,8 @@ html, body {
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  z-index: 2;
+  z-index: 999;
+  overflow: visible;
 }
 
 .welcome-title {
@@ -163,16 +156,17 @@ rgb(212, 155, 11);
 /* Rings Parallax - Will move upward on scroll */
 .rings-parallax {
   position: absolute;
-  top: 200%;
-  left: -250px;
-  width: 55dvw !important;
-  height: 55dvh !important;
-  z-index: 1;
+  top: 150%;
+  right: -100px!important;
+  width: 70dvw !important;
+  height: 50dvh !important;
+  z-index: 999;
   opacity: 1;
   transition: transform 0.1s ease-out;
   transform-origin: center;
   object-fit: contain;
-  overflow: hidden;
+  overflow: visible!important;
+
 }
 
 /* Philosophy Text - Static positioning */

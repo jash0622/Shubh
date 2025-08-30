@@ -141,15 +141,16 @@
   line-height: 113px;
   letter-spacing: 1px;
   margin-bottom: 0;
-  width: 800px;
+  width: 900px;
   text-transform: uppercase;
+  margin-left: 80px;
 }
 
 /* Mission Description - Positioned for scroll reveal */
 .mission-description {
   position: absolute;
   top: 40vh;
-  right: 80px;
+  right: 70px;
   width: 980px;
   text-align: right;
   z-index: 15;
