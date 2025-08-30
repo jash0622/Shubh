@@ -164,7 +164,7 @@ rgb(212, 155, 11);
 .rings-parallax {
   position: absolute;
   top: 200%;
-  left: -350px;
+  left: -250px;
   width: 55dvw !important;
   height: 55dvh !important;
   z-index: 1;
@@ -172,7 +172,7 @@ rgb(212, 155, 11);
   transition: transform 0.1s ease-out;
   transform-origin: center;
   object-fit: contain;
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Philosophy Text - Static positioning */
@@ -580,7 +580,8 @@ color: white;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
+  
   background: url('/closeup-textured-white-f-scaled.jpg') no-repeat center center/cover;
   opacity: 0.2; /* 👈 adjust this value (0 = invisible, 1 = full) */
   z-index: -1;
