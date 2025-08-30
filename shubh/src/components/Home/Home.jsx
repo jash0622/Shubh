@@ -355,7 +355,6 @@ const Home = () => {
 
       {/* Explore Project Section */}
       <section className="explore-project-section">
-        <div className="explore-bg-layer"></div>
         <img src="/leaf-md (1).webp" alt="" className="leaf-parallax-explore" />
         <div className="explore-button" onClick={() => window.location.href = '/projects'} style={{position: 'relative', zIndex: 10}}>
           <span>EXPLORE</span>
