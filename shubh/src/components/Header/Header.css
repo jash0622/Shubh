@@ -43,7 +43,6 @@
 }
 
 .nav-link {
-    font-family: "dmc5", Sans-serif;
     font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
@@ -57,11 +56,13 @@
 }
 .nav-link:hover {
   opacity: 0.8 !important;
-  color: #D4AF37 !important;
+  color: 
+rgb(212, 155, 11) !important;
 }
 
 .nav-link.active {
-  color: #D4AF37 !important;
+  color: 
+rgb(212, 155, 11) !important;
 }
 
 .logo-container {
@@ -87,7 +88,6 @@
 }
 
 .phone-number {
-  font-family: "dmc5", Sans-serif;
   font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
@@ -97,45 +97,42 @@
   text-decoration: none;
   font-stretch: condensed;
   line-height: 0.8;
-  transform: scaleY(0.6);
   transition: opacity 0.3s ease;
 }
 
 .phone-number:hover {
   opacity: 0.8;
-  color: #D4AF37;
+  color: 
+rgb(212, 155, 11);
 }
 
 .schedule-btn {
   background: transparent;
-  font-family: "dmc5", Sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #FFFFFF;
   border-radius: 40px;
   background-color: #11001c;
   display: flex;
   text-decoration: none;
-  font-stretch: condensed;
   line-height: 0.8;
-  transform: scaleY(0.7);
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 16px 28px;
   border: none;
 }
 
 .schedule-btn:hover {
-  background: #D4AF37;
+  background: 
+rgb(212, 155, 11);
   color: #11001c;
   border-radius: 40px;
 }
 
 /* Mobile responsiveness */
 
-@media (max-width: 2400) {
+@media (min-width: 2400) {
   .header {
   position: fixed;
   top: 0;
@@ -319,7 +316,6 @@
 }
 
 .nav-link {
-    font-family: "dmc5", Sans-serif;
     font-size: 18px;
     font-weight: 100;
     text-transform: uppercase;
@@ -328,8 +324,6 @@
     display: flex;
     text-decoration: none;
     font-stretch: condensed;
-    line-height: 0.8;
-    transform: scaleY(0.6);
 }
 .nav-link:hover {
   opacity: 0.8 !important;
@@ -363,17 +357,13 @@
 }
 
 .phone-number {
-  font-family: "dmc5", Sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #FFFFFF;
   display: flex;
   text-decoration: none;
-  font-stretch: condensed;
-  line-height: 0.8;
-  transform: scaleY(0.6);
   transition: opacity 0.3s ease;
 }
 
@@ -384,8 +374,7 @@
 
 .schedule-btn {
   background: transparent;
-  font-family: "dmc5", Sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -394,12 +383,11 @@
   background-color: #11001c;
   display: flex;
   text-decoration: none;
-  font-stretch: condensed;
+
   line-height: 0.8;
-  transform: scaleY(0.7);
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 16px 28px;
+  padding: 12px 20px;
   border: none;
 }
 

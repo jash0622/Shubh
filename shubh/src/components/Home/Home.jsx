@@ -160,10 +160,10 @@ const Home = () => {
       {/* Welcome Section */}
       <section className="welcome-section">
         <div className="welcome-content">
-          <h2 className="welcome-title">WELCOME TO<br />SUBH HOUSING</h2>
+          <h2 className="welcome-title"       style={{ fontFamily: "SangBleuSunrise-Regular" }}>WELCOME TO SUBH<br /> HOUSING</h2>
           <p className="welcome-tagline">Welcome home.</p>
           <img src="/rings-xxl.webp" alt="" className="rings-parallax" />
-          <p className="philosophy-text" style={{fontWeight: '900', fontFamily: 'Inter, sans-serif', WebkitFontSmoothing: 'antialiased'}}>
+          <p className="philosophy-text">
             At Subh Housing, we believe that a home is not just made of walls — it's built with trust, dreams, and a deep sense of belonging. Founded in 2023, our journey began with a simple yet powerful vision: to create spaces that feel like home even before you move in.
           </p>
         </div>
@@ -345,8 +345,8 @@ const Home = () => {
           <img src="/image-girl.webp" alt="Mother and Daughter" className="girl-image" />
           <div className="signature-footer">
             <p>
-              Seggovias by Subh Housing is a premium 3 BHK + Study residential project offering spacious<br />
-              layouts, modern interiors, and lifestyle amenities<br />
+              Seggovias by Subh Housing is a premium 3 BHK + Study residential project offering spacious
+              layouts, modern interiors, and lifestyle amenities
               — designed for elevated living in a prime, well-connected location.
             </p>
           </div>
@@ -427,7 +427,7 @@ const Home = () => {
         <div className="bank-content">
           <div className="bank-text-section">
             <div className="bank-title-wrapper">
-              <p className="bank-stay-informed">Stay informed</p>
+              <p className="bank-stay-informed">sTay informed</p>
               <h2 className="bank-title">INSIGHTS & UPDATES</h2>
             </div>
             <div className="bank-description-wrapper">
@@ -445,13 +445,11 @@ const Home = () => {
           <div className="bank-logos-section">
             <div className="bank-section-title-wrapper">
               <h2 className="bank-section-title">
-                BANK<br />
-                ON<br />
+                BANK ON<br />
                 SUBH
               </h2>
               <p className="bank-section-subtitle">
-                HASSLE-<br />
-                FREE<br />
+                HASSLE-FREE<br />
                 HOMEBUYING
               </p>
             </div>

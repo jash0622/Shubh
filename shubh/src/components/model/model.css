@@ -20,7 +20,7 @@
   position: relative;
   width: 100%;
   max-width: 1000px;
-  height: 80vh;
+  height: 70vh;
   max-height: 600px;
   background: white;
    border-radius: 150px 24px 24px 24px;
@@ -58,16 +58,16 @@
 /* Close Button */
 .modal-close {
   position: absolute;
-  top: -25px;
-  right: -20px;
+  top: -5px;
+  right: 5px;
   z-index: 100;
   background: none;
   border: none;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   cursor: pointer;
-  transform: scale(1);
+  
 }
 
 .modal-close:hover {
@@ -120,7 +120,7 @@
 
 /* Logo */
 .logo-container-modal {
- text-align: center;
+ align-items: center;
   margin-bottom: -2.2rem;
   margin-top: -2.2rem;
  
@@ -128,7 +128,7 @@
 
 .subh-logo-modal {
   height: 50px;
-  
+  margin-left: 100px;
   width: auto;
   object-fit: contain;
 }
@@ -221,7 +221,7 @@
 
 .submit-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+  background-color: #D49B0B;
 }
 
 .submit-button:active {

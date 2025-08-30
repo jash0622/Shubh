@@ -230,8 +230,8 @@ function Project() {
               </div>
               
               <div className="project-buttons">
-                <button className="btn-primary">Enquire Now ↗</button>
-                <button className="btn-secondary">Download Brochure ⬇</button>
+                <button className="btn-primary">Enquire Now</button>
+                <button className="btn-secondary">Download Brochure</button>
               </div>
             </div>
             

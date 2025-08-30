@@ -101,8 +101,8 @@ const Contact = () => {
             </div>
             
             <form className="contact-form-fields">
-              <div className="form-row">
-                <input type="text" placeholder="*Full Name" className="contact-form-input" />
+              <div id='contact-form' className="form-row">
+                <input type="text" placeholder="Full Name*" className="contact-form-input" />
                 <input type="tel" placeholder="Phone Number*" className="contact-form-input" />
               </div>
               <input type="email" placeholder="Email Address*" className="contact-form-input" />

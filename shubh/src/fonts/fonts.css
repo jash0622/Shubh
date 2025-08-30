@@ -1,46 +1,154 @@
 @font-face {
-  font-family: 'SangBleuSunrise';
-  src: url('./SangBleuSunrise-Regular.woff2') format('woff2');
+  font-family: "SangBleuSunrise";
+  src: url("./SangBleuSunrise-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'WonderGardenScript';
-  src: url('./WonderGardenScript.woff2') format('woff2');
+  font-family: "WonderGardenScript";
+  src: url("./WonderGardenScript.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'GeneralSans-Light';
-  src: url('./GeneralSans-Light.ttf') format('truetype');
-  font-weight: semi-bold;
+  font-family: "GeneralSans-Light";
+  src: url("./GeneralSans-Light.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "GeneralSans-ExtraLight";
+  src: url("./GeneralSans-Extralight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SangBleuSunrise-Regular";
+  src: url("./SangBleuSunrise-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "dmc5";
+  src: url("./dmc5.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: url("./GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "romantically";
+  src: url("./romantically.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bank-cta-text,
+.bank-cta-button.nav-link,
+.schedule-btn,
+.phone-number,
+.mission-subtitle,
+.vision-subtitle,
+.vision-right-text,
+.values-subtitle,
+.couple-subtitle,
+.face-name {
+  font-family: "dmc5", sans-serif !important;
+}
+/* h1, h2, h3, h4, h5, h6 {
   font-family: 'SangBleuSunrise', serif !important;
+} */
+.welcome-title,
+.story-badge span,
+.foundations-title,
+.header-text,
+.explore-button span,
+.subh-edge-title,
+.frontiers-title,
+.card-content h3,
+.bank-title,
+.bank-section-title,
+.content-left h1,
+.mission-heading,
+.avision h2,
+.avision h3,
+.values-header h2,
+.couple-main-title,
+.couple-subtitle-line,
+.step-in-text,
+.faces-title,
+.project-section-title,
+.contact-hero-title,
+.hero-title{
+  font-family: "SangBleuSunrise-Regular", serif !important;
+}
+
+.mission-description p,.face-quote,.feature-text h3,.glimpse-tabs .tab,.amenity-tabs .tab, .contact-section-content {
+  font-family: "GeneralSans-Regular", sans-serif !important;
 }
 
 .welcome-tagline,
 .foundations-tagline,
-.experience-text,
 .frontiers-subtitle,
+.vision-explore,
+.values-cursive{
+  font-family: "WonderGardenScript", cursive !important;
+}
+.experience-text,
 .bank-stay-informed,
 .home-text,
-.vision-explore,
-.values-cursive,
-.faces-subtitle {
-  font-family: 'WonderGardenScript', cursive !important;
+.avision p,
+.values-header,
+.faces-subtitle  {
+  font-family: "WonderGardenScript", sans-serif !important;
 }
 
-p, span, div:not(.welcome-tagline):not(.foundations-tagline):not(.experience-text):not(.frontiers-subtitle):not(.bank-stay-informed):not(.home-text):not(.vision-explore):not(.values-cursive):not(.faces-subtitle), 
-.hero-subtitle, .story-text, .panel p, .signature-footer p, .frontiers-description, .bank-description, 
-.description, .mission-subtitle, .vision-description, .card-description, .newsletter-description, .form-input, .form-textarea,
-.section-content, .contact-form-fields input, .contact-form-fields textarea, .project-description p, .feature-text h3 {
-  font-family: 'GeneralSans-Light', sans-serif !important;
+
+
+.panel p,
+.description,
+.card-description,
+.newsletter-description,
+.form-input,
+.form-textarea,
+.section-content,
+.contact-form-fields input,
+.contact-form-fields textarea {
+  font-family: "GeneralSans-Light-normal", sans-serif !important;
+}
+.philosophy-text,
+.story-text,
+.signature-footer p,
+.frontiers-description,
+.bank-description,
+.vision-description,
+.face-message,
+.project-description p,
+.hero-subtitle {
+  font-family: "GeneralSans-Light", sans-serif;
+}
+
+.face-position{
+  font-family: "GeneralSans-ExtraLight", sans-serif !important;
+}
+
+.face-signature{
+  font-family: "romantically", sans-serif !important;
 }
