@@ -163,9 +163,11 @@ const Home = () => {
           <h2 className="welcome-title"       style={{ fontFamily: "SangBleuSunrise-Regular" }}>WELCOME TO SUBH<br /> HOUSING</h2>
           <p className="welcome-tagline">Welcome home.</p>
           <img src="/rings-xxl.webp" alt="" className="rings-parallax" />
+          <div className="philosophy-parent">
           <p className="philosophy-text">
             At Subh Housing, we believe that a home is not just made of walls — it's built with trust, dreams, and a deep sense of belonging. Founded in 2023, our journey began with a simple yet powerful vision: to create spaces that feel like home even before you move in.
           </p>
+          </div>
         </div>
       </section>
 
