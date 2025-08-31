@@ -41,7 +41,7 @@ const Home = () => {
         if (storyCenter <= windowHeight / 2) {
           parallaxRings.style.transform = `translateY(-100vh)`;
         } else {
-          parallaxRings.style.transform = `translateY(${scrolled * -0.3}px)`;
+          parallaxRings.style.transform = `translateY(${scrolled * -0.5}px)`;
         }
       }
 
@@ -358,7 +358,7 @@ const Home = () => {
       {/* Explore Project Section */}
       <section className="explore-project-section">
         <img src="/leaf-md (1).webp" alt="" className="leaf-parallax-explore" />
-        <div className="explore-button" onClick={() => window.location.href = '/projects'} style={{position: 'relative', zIndex: 10}}>
+        <div className="explore-button" onClick={() => window.location.href = '/projects'} >
           <span>EXPLORE</span>
           <span>PROJECT</span>
         </div>
